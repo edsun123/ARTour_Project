@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		049E63FF9F2E88C931DFDFC1 /* Pods_ARtour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB616B0C4529F27654637BDD /* Pods_ARtour.framework */; };
+		4E3D365B2373AF7B001F5A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */; };
+		4E3D365D2373AF7B001F5A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365C2373AF7B001F5A36 /* ViewController.swift */; };
+		4E3D365F2373AF7B001F5A36 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365E2373AF7B001F5A36 /* Experience.rcproject */; };
+		4E3D36622373AF7B001F5A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3D36602373AF7B001F5A36 /* Main.storyboard */; };
+		4E3D36642373AF7E001F5A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3D36632373AF7E001F5A36 /* Assets.xcassets */; };
+		4E3D36672373AF7E001F5A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3D36652373AF7E001F5A36 /* LaunchScreen.storyboard */; };
+		4E3D36722373AF7E001F5A36 /* ARtourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D36712373AF7E001F5A36 /* ARtourTests.swift */; };
+		4E3D367D2373AF7E001F5A36 /* ARtourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D367C2373AF7E001F5A36 /* ARtourUITests.swift */; };
+		4E3D368B2373B4BE001F5A36 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D368A2373B4BE001F5A36 /* MainViewController.swift */; };
+		4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D368C2373B4D7001F5A36 /* TourViewController.swift */; };
+		4E3D368F2373B544001F5A36 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D368E2373B544001F5A36 /* SignInViewController.swift */; };
+		9FB1A3EA98B5B3ACD1FDF1B3 /* Pods_ARtourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574936C2270E2B7E2BEB27DE /* Pods_ARtourUITests.framework */; };
+		F1DA72C1359C2AF528095964 /* Pods_ARtourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2560F205D16CA9E5E652FCA7 /* Pods_ARtourTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E3D366E2373AF7E001F5A36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E3D364F2373AF7B001F5A36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E3D36562373AF7B001F5A36;
+			remoteInfo = ARtour;
+		};
+		4E3D36792373AF7E001F5A36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E3D364F2373AF7B001F5A36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E3D36562373AF7B001F5A36;
+			remoteInfo = ARtour;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14F7AC6B42EA7215DC69AC11 /* Pods-ARtour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtour.release.xcconfig"; path = "Target Support Files/Pods-ARtour/Pods-ARtour.release.xcconfig"; sourceTree = "<group>"; };
+		23B9F244BC67D62E5FA7DD69 /* Pods-ARtour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtour.debug.xcconfig"; path = "Target Support Files/Pods-ARtour/Pods-ARtour.debug.xcconfig"; sourceTree = "<group>"; };
+		2560F205D16CA9E5E652FCA7 /* Pods_ARtourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E3D36572373AF7B001F5A36 /* ARtour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARtour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E3D365C2373AF7B001F5A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E3D365E2373AF7B001F5A36 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		4E3D36612373AF7B001F5A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E3D36632373AF7E001F5A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E3D36662373AF7E001F5A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E3D36682373AF7E001F5A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E3D366D2373AF7E001F5A36 /* ARtourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARtourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E3D36712373AF7E001F5A36 /* ARtourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARtourTests.swift; sourceTree = "<group>"; };
+		4E3D36732373AF7E001F5A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E3D36782373AF7E001F5A36 /* ARtourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARtourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E3D367C2373AF7E001F5A36 /* ARtourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARtourUITests.swift; sourceTree = "<group>"; };
+		4E3D367E2373AF7E001F5A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E3D368A2373B4BE001F5A36 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4E3D368C2373B4D7001F5A36 /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
+		4E3D368E2373B544001F5A36 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		574936C2270E2B7E2BEB27DE /* Pods_ARtourUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtourUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58267AC3C74CA2701BAFB4D0 /* Pods-ARtourUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourUITests.debug.xcconfig"; path = "Target Support Files/Pods-ARtourUITests/Pods-ARtourUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6411CCC5392C6F4DC8CB1551 /* Pods-ARtourUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourUITests.release.xcconfig"; path = "Target Support Files/Pods-ARtourUITests/Pods-ARtourUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A939391773EA806ED7DD556B /* Pods-ARtourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.debug.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB616B0C4529F27654637BDD /* Pods_ARtour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41766272A2ED7CC6EA198AC /* Pods-ARtourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.release.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E3D36542373AF7B001F5A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049E63FF9F2E88C931DFDFC1 /* Pods_ARtour.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E3D366A2373AF7E001F5A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DA72C1359C2AF528095964 /* Pods_ARtourTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E3D36752373AF7E001F5A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB1A3EA98B5B3ACD1FDF1B3 /* Pods_ARtourUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E3D364E2373AF7B001F5A36 = {
+			isa = PBXGroup;
+			children = (
+				4E3D36592373AF7B001F5A36 /* ARtour */,
+				4E3D36702373AF7E001F5A36 /* ARtourTests */,
+				4E3D367B2373AF7E001F5A36 /* ARtourUITests */,
+				4E3D36582373AF7B001F5A36 /* Products */,
+				D8B1DBC5AF94057FC7356534 /* Pods */,
+				AC1656FDD56EBA3528D37B49 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4E3D36582373AF7B001F5A36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E3D36572373AF7B001F5A36 /* ARtour.app */,
+				4E3D366D2373AF7E001F5A36 /* ARtourTests.xctest */,
+				4E3D36782373AF7E001F5A36 /* ARtourUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E3D36592373AF7B001F5A36 /* ARtour */ = {
+			isa = PBXGroup;
+			children = (
+				4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */,
+				4E3D368E2373B544001F5A36 /* SignInViewController.swift */,
+				4E3D368A2373B4BE001F5A36 /* MainViewController.swift */,
+				4E3D368C2373B4D7001F5A36 /* TourViewController.swift */,
+				4E3D365C2373AF7B001F5A36 /* ViewController.swift */,
+				4E3D365E2373AF7B001F5A36 /* Experience.rcproject */,
+				4E3D36602373AF7B001F5A36 /* Main.storyboard */,
+				4E3D36632373AF7E001F5A36 /* Assets.xcassets */,
+				4E3D36652373AF7E001F5A36 /* LaunchScreen.storyboard */,
+				4E3D36682373AF7E001F5A36 /* Info.plist */,
+			);
+			path = ARtour;
+			sourceTree = "<group>";
+		};
+		4E3D36702373AF7E001F5A36 /* ARtourTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E3D36712373AF7E001F5A36 /* ARtourTests.swift */,
+				4E3D36732373AF7E001F5A36 /* Info.plist */,
+			);
+			path = ARtourTests;
+			sourceTree = "<group>";
+		};
+		4E3D367B2373AF7E001F5A36 /* ARtourUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E3D367C2373AF7E001F5A36 /* ARtourUITests.swift */,
+				4E3D367E2373AF7E001F5A36 /* Info.plist */,
+			);
+			path = ARtourUITests;
+			sourceTree = "<group>";
+		};
+		AC1656FDD56EBA3528D37B49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB616B0C4529F27654637BDD /* Pods_ARtour.framework */,
+				2560F205D16CA9E5E652FCA7 /* Pods_ARtourTests.framework */,
+				574936C2270E2B7E2BEB27DE /* Pods_ARtourUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8B1DBC5AF94057FC7356534 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23B9F244BC67D62E5FA7DD69 /* Pods-ARtour.debug.xcconfig */,
+				14F7AC6B42EA7215DC69AC11 /* Pods-ARtour.release.xcconfig */,
+				A939391773EA806ED7DD556B /* Pods-ARtourTests.debug.xcconfig */,
+				B41766272A2ED7CC6EA198AC /* Pods-ARtourTests.release.xcconfig */,
+				58267AC3C74CA2701BAFB4D0 /* Pods-ARtourUITests.debug.xcconfig */,
+				6411CCC5392C6F4DC8CB1551 /* Pods-ARtourUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E3D36562373AF7B001F5A36 /* ARtour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E3D36812373AF7E001F5A36 /* Build configuration list for PBXNativeTarget "ARtour" */;
+			buildPhases = (
+				F4156FBB00C589D8884CC78C /* [CP] Check Pods Manifest.lock */,
+				4E3D36532373AF7B001F5A36 /* Sources */,
+				4E3D36542373AF7B001F5A36 /* Frameworks */,
+				4E3D36552373AF7B001F5A36 /* Resources */,
+				EA4DEC92B669A8056D73B29A /* [CP] Embed Pods Frameworks */,
+				27A239D2989E2E3040050252 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARtour;
+			productName = ARtour;
+			productReference = 4E3D36572373AF7B001F5A36 /* ARtour.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E3D366C2373AF7E001F5A36 /* ARtourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E3D36842373AF7E001F5A36 /* Build configuration list for PBXNativeTarget "ARtourTests" */;
+			buildPhases = (
+				1F887F08F814BC052ADE35BD /* [CP] Check Pods Manifest.lock */,
+				4E3D36692373AF7E001F5A36 /* Sources */,
+				4E3D366A2373AF7E001F5A36 /* Frameworks */,
+				4E3D366B2373AF7E001F5A36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E3D366F2373AF7E001F5A36 /* PBXTargetDependency */,
+			);
+			name = ARtourTests;
+			productName = ARtourTests;
+			productReference = 4E3D366D2373AF7E001F5A36 /* ARtourTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E3D36772373AF7E001F5A36 /* ARtourUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E3D36872373AF7E001F5A36 /* Build configuration list for PBXNativeTarget "ARtourUITests" */;
+			buildPhases = (
+				02675E6F5D9A0A87E3307F2D /* [CP] Check Pods Manifest.lock */,
+				4E3D36742373AF7E001F5A36 /* Sources */,
+				4E3D36752373AF7E001F5A36 /* Frameworks */,
+				4E3D36762373AF7E001F5A36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E3D367A2373AF7E001F5A36 /* PBXTargetDependency */,
+			);
+			name = ARtourUITests;
+			productName = ARtourUITests;
+			productReference = 4E3D36782373AF7E001F5A36 /* ARtourUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E3D364F2373AF7B001F5A36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = SeniorDesign;
+				TargetAttributes = {
+					4E3D36562373AF7B001F5A36 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					4E3D366C2373AF7E001F5A36 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 4E3D36562373AF7B001F5A36;
+					};
+					4E3D36772373AF7E001F5A36 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 4E3D36562373AF7B001F5A36;
+					};
+				};
+			};
+			buildConfigurationList = 4E3D36522373AF7B001F5A36 /* Build configuration list for PBXProject "ARtour" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E3D364E2373AF7B001F5A36;
+			productRefGroup = 4E3D36582373AF7B001F5A36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E3D36562373AF7B001F5A36 /* ARtour */,
+				4E3D366C2373AF7E001F5A36 /* ARtourTests */,
+				4E3D36772373AF7E001F5A36 /* ARtourUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E3D36552373AF7B001F5A36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3D36672373AF7E001F5A36 /* LaunchScreen.storyboard in Resources */,
+				4E3D36642373AF7E001F5A36 /* Assets.xcassets in Resources */,
+				4E3D36622373AF7B001F5A36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E3D366B2373AF7E001F5A36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E3D36762373AF7E001F5A36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02675E6F5D9A0A87E3307F2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARtourUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F887F08F814BC052ADE35BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARtourTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27A239D2989E2E3040050252 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA4DEC92B669A8056D73B29A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4156FBB00C589D8884CC78C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARtour-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E3D36532373AF7B001F5A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */,
+				4E3D365D2373AF7B001F5A36 /* ViewController.swift in Sources */,
+				4E3D368F2373B544001F5A36 /* SignInViewController.swift in Sources */,
+				4E3D365B2373AF7B001F5A36 /* AppDelegate.swift in Sources */,
+				4E3D365F2373AF7B001F5A36 /* Experience.rcproject in Sources */,
+				4E3D368B2373B4BE001F5A36 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E3D36692373AF7E001F5A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3D36722373AF7E001F5A36 /* ARtourTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E3D36742373AF7E001F5A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3D367D2373AF7E001F5A36 /* ARtourUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E3D366F2373AF7E001F5A36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E3D36562373AF7B001F5A36 /* ARtour */;
+			targetProxy = 4E3D366E2373AF7E001F5A36 /* PBXContainerItemProxy */;
+		};
+		4E3D367A2373AF7E001F5A36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E3D36562373AF7B001F5A36 /* ARtour */;
+			targetProxy = 4E3D36792373AF7E001F5A36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E3D36602373AF7B001F5A36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E3D36612373AF7B001F5A36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E3D36652373AF7E001F5A36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E3D36662373AF7E001F5A36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E3D367F2373AF7E001F5A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E3D36802373AF7E001F5A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E3D36822373AF7E001F5A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B9F244BC67D62E5FA7DD69 /* Pods-ARtour.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARtour/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.ARtour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E3D36832373AF7E001F5A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14F7AC6B42EA7215DC69AC11 /* Pods-ARtour.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARtour/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.ARtour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E3D36852373AF7E001F5A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A939391773EA806ED7DD556B /* Pods-ARtourTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARtourTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.ARtourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARtour.app/ARtour";
+			};
+			name = Debug;
+		};
+		4E3D36862373AF7E001F5A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41766272A2ED7CC6EA198AC /* Pods-ARtourTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARtourTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.ARtourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARtour.app/ARtour";
+			};
+			name = Release;
+		};
+		4E3D36882373AF7E001F5A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58267AC3C74CA2701BAFB4D0 /* Pods-ARtourUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARtourUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.ARtourUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARtour;
+			};
+			name = Debug;
+		};
+		4E3D36892373AF7E001F5A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6411CCC5392C6F4DC8CB1551 /* Pods-ARtourUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARtourUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.ARtourUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARtour;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E3D36522373AF7B001F5A36 /* Build configuration list for PBXProject "ARtour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E3D367F2373AF7E001F5A36 /* Debug */,
+				4E3D36802373AF7E001F5A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E3D36812373AF7E001F5A36 /* Build configuration list for PBXNativeTarget "ARtour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E3D36822373AF7E001F5A36 /* Debug */,
+				4E3D36832373AF7E001F5A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E3D36842373AF7E001F5A36 /* Build configuration list for PBXNativeTarget "ARtourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E3D36852373AF7E001F5A36 /* Debug */,
+				4E3D36862373AF7E001F5A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E3D36872373AF7E001F5A36 /* Build configuration list for PBXNativeTarget "ARtourUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E3D36882373AF7E001F5A36 /* Debug */,
+				4E3D36892373AF7E001F5A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E3D364F2373AF7B001F5A36 /* Project object */;
+}
