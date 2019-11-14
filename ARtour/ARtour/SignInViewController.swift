@@ -7,27 +7,25 @@
 //
 
 import UIKit
+import Firebase
 import GoogleSignIn
 
 class SignInViewController: UIViewController {
-
+    
+    //@IBOutlet weak var signInButton: GIDSignInButton!
+    @IBOutlet weak var signInButton: GIDSignInButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        //Create SignIn Button
-        let gSignIn = GIDSignInButton(frame: CGRect(x: 0, y: 0, width: 230, height: 48))
-        gSignIn.center = view.center
-        view.addSubview(gSignIn)
-        
         GIDSignIn.sharedInstance()?.presentingViewController = self
-        //Automatically SignIn the User
-        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        GIDSignIn.sharedInstance().signIn()
         
+        //SignIn Button Customization
+        //var colorScheme: GIDSignInButtonColorScheme { get set }
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -39,3 +37,5 @@ class SignInViewController: UIViewController {
     */
 
 }
+
+

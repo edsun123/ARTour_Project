@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import GoogleSignIn
 
 @UIApplicationMain
@@ -17,51 +18,65 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        //Initialize Google SignIn
-        GIDSignIn.sharedInstance().clientID = "873732713867-sosjm6tbmkq35rthhj7nfso2lqkffam5.apps.googleusercontent.com"
+        FirebaseApp.configure() // Use Firebase library to configure APIs
+        
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
-
+        
         return true
     }
-
-    //This function handles getting the URL to Google SignIn
+    
     @available(iOS 9.0, *)
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
       return GIDSignIn.sharedInstance().handle(url)
     }
     
-    //This function is so our app can run on iOS 8 and older
-    func application(_ application: UIApplication,
-                     open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-      return GIDSignIn.sharedInstance().handle(url)
-    }
-    
-    //SignIn Protocol
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
-              withError error: Error!) {
-      if let error = error {
-        if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
-          print("The user has not signed in before or they have since signed out.")
-        } else {
-          print("\(error.localizedDescription)")
+    //SignIn
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+
+        if let error = error {
+          if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+            print("The user has not signed in before or they have since signed out.")
+          } else {
+            print("\(error.localizedDescription)")
+          }
+          return
         }
-        return
-      }
-      // Perform any operations on signed in user here.
-      let userId = user.userID                  // For client-side use only!
-      let idToken = user.authentication.idToken // Safe to send to the server
-      let fullName = user.profile.name
-      let givenName = user.profile.givenName
-      let familyName = user.profile.familyName
-      let email = user.profile.email
-      // ...
-    }
+        
+        // Perform any operations on signed in user here.
+        let userId = user.userID                  // For client-side use only!
+        let idToken = user.authentication.idToken // Safe to send to the server
+        let fullName = user.profile.name
+        let givenName = user.profile.givenName
+        let familyName = user.profile.familyName
+        let email = user.profile.email
+        // ...
+
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
     
-    //SignOut Protocol
+        Auth.auth().signIn(with: credential) { (authResult, error) in
+            if let error = error {
+                print("Firebase Login Failed")
+                print(error)
+                return
+            }
+            // User is signed in
+            print("Firebase Login Successful")
+            self.signInSegue()
+        }
+    }
+
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
               withError error: Error!) {
       // Perform any operations when the user disconnects from app here.
       // ...
+    }
+    
+    func signInSegue() {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPage") as UIViewController
+        window?.rootViewController = viewController
+        window?.makeKeyAndVisible()
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
