@@ -18,10 +18,9 @@
 		4E3D367D2373AF7E001F5A36 /* ARtourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D367C2373AF7E001F5A36 /* ARtourUITests.swift */; };
 		4E3D368B2373B4BE001F5A36 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D368A2373B4BE001F5A36 /* MainViewController.swift */; };
 		4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D368C2373B4D7001F5A36 /* TourViewController.swift */; };
-		4E3D368F2373B544001F5A36 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D368E2373B544001F5A36 /* SignInViewController.swift */; };
-		4ED75FDA237B39F4002FF695 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4ED75FD9237B39F4002FF695 /* GoogleService-Info.plist */; };
-		4ED75FDB237B39F4002FF695 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4ED75FD9237B39F4002FF695 /* GoogleService-Info.plist */; };
-		4ED75FDC237B39F4002FF695 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4ED75FD9237B39F4002FF695 /* GoogleService-Info.plist */; };
+		4E5558F923CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
+		4E5558FA23CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
+		4E5558FB23CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
 		9FB1A3EA98B5B3ACD1FDF1B3 /* Pods_ARtourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574936C2270E2B7E2BEB27DE /* Pods_ARtourUITests.framework */; };
 		F1DA72C1359C2AF528095964 /* Pods_ARtourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2560F205D16CA9E5E652FCA7 /* Pods_ARtourTests.framework */; };
 /* End PBXBuildFile section */
@@ -63,8 +62,7 @@
 		4E3D367E2373AF7E001F5A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E3D368A2373B4BE001F5A36 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4E3D368C2373B4D7001F5A36 /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
-		4E3D368E2373B544001F5A36 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		4ED75FD9237B39F4002FF695 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		574936C2270E2B7E2BEB27DE /* Pods_ARtourUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtourUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58267AC3C74CA2701BAFB4D0 /* Pods-ARtourUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourUITests.debug.xcconfig"; path = "Target Support Files/Pods-ARtourUITests/Pods-ARtourUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6411CCC5392C6F4DC8CB1551 /* Pods-ARtourUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourUITests.release.xcconfig"; path = "Target Support Files/Pods-ARtourUITests/Pods-ARtourUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */,
-				4E3D368E2373B544001F5A36 /* SignInViewController.swift */,
 				4E3D368A2373B4BE001F5A36 /* MainViewController.swift */,
 				4E3D368C2373B4D7001F5A36 /* TourViewController.swift */,
 				4E3D365C2373AF7B001F5A36 /* ViewController.swift */,
@@ -136,7 +133,7 @@
 				4E3D36632373AF7E001F5A36 /* Assets.xcassets */,
 				4E3D36652373AF7E001F5A36 /* LaunchScreen.storyboard */,
 				4E3D36682373AF7E001F5A36 /* Info.plist */,
-				4ED75FD9237B39F4002FF695 /* GoogleService-Info.plist */,
+				4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */,
 			);
 			path = ARtour;
 			sourceTree = "<group>";
@@ -292,7 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3D36672373AF7E001F5A36 /* LaunchScreen.storyboard in Resources */,
-				4ED75FDA237B39F4002FF695 /* GoogleService-Info.plist in Resources */,
+				4E5558F923CED43E00A331B4 /* GoogleService-Info.plist in Resources */,
 				4E3D36642373AF7E001F5A36 /* Assets.xcassets in Resources */,
 				4E3D36622373AF7B001F5A36 /* Main.storyboard in Resources */,
 			);
@@ -302,7 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED75FDB237B39F4002FF695 /* GoogleService-Info.plist in Resources */,
+				4E5558FA23CED43E00A331B4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED75FDC237B39F4002FF695 /* GoogleService-Info.plist in Resources */,
+				4E5558FB23CED43E00A331B4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +423,6 @@
 			files = (
 				4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */,
 				4E3D365D2373AF7B001F5A36 /* ViewController.swift in Sources */,
-				4E3D368F2373B544001F5A36 /* SignInViewController.swift in Sources */,
 				4E3D365B2373AF7B001F5A36 /* AppDelegate.swift in Sources */,
 				4E3D365F2373AF7B001F5A36 /* Experience.rcproject in Sources */,
 				4E3D368B2373B4BE001F5A36 /* MainViewController.swift in Sources */,

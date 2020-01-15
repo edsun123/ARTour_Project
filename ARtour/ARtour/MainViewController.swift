@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //In this view controller I want to request access to Location, Bluetooth, and Camera
 
     /*
     // MARK: - Navigation
