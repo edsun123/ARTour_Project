@@ -150,6 +150,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="AccessCode:" destination="KvO-y8-QCj" eventType="touchUpInside" id="n9Z-MI-bmU"/>
                                             <segue destination="amH-94-Jyh" kind="show" id="9CI-5j-lpR"/>
                                         </connections>
                                     </button>
@@ -212,6 +213,9 @@
                         <viewLayoutGuide key="safeArea" id="A15-Au-eAS"/>
                     </view>
                     <navigationItem key="navigationItem" id="DJ3-Bs-9S8"/>
+                    <connections>
+                        <outlet property="TextField" destination="MLv-Zn-nFw" id="lB1-41-pZQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLh-Qn-oi7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -335,6 +339,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ThE-ij-0l9"/>
+        <segue reference="eLd-Pc-1eL"/>
     </inferredMetricsTieBreakers>
 </document>
