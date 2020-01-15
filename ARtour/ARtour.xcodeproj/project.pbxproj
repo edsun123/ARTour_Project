@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		049E63FF9F2E88C931DFDFC1 /* Pods_ARtour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB616B0C4529F27654637BDD /* Pods_ARtour.framework */; };
+		487EEFC9F26A058A09E38F9E /* Pods_ARtour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C03FB7721291A386CB104AA /* Pods_ARtour.framework */; };
+		4A69173708AB010EBB1BCA7F /* Pods_ARtourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C749016CB509AECE92FB39B /* Pods_ARtourUITests.framework */; };
 		4E3D365B2373AF7B001F5A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */; };
 		4E3D365D2373AF7B001F5A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365C2373AF7B001F5A36 /* ViewController.swift */; };
 		4E3D365F2373AF7B001F5A36 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365E2373AF7B001F5A36 /* Experience.rcproject */; };
@@ -21,8 +22,10 @@
 		4E5558F923CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
 		4E5558FA23CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
 		4E5558FB23CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
-		9FB1A3EA98B5B3ACD1FDF1B3 /* Pods_ARtourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574936C2270E2B7E2BEB27DE /* Pods_ARtourUITests.framework */; };
-		F1DA72C1359C2AF528095964 /* Pods_ARtourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2560F205D16CA9E5E652FCA7 /* Pods_ARtourTests.framework */; };
+		4EB903E423CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
+		4EB903E523CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
+		4EB903E623CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
+		F490A70470B40B2B45E2FBFA /* Pods_ARtourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC71DEE9CA819CD620754AC7 /* Pods_ARtourTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14F7AC6B42EA7215DC69AC11 /* Pods-ARtour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtour.release.xcconfig"; path = "Target Support Files/Pods-ARtour/Pods-ARtour.release.xcconfig"; sourceTree = "<group>"; };
-		23B9F244BC67D62E5FA7DD69 /* Pods-ARtour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtour.debug.xcconfig"; path = "Target Support Files/Pods-ARtour/Pods-ARtour.debug.xcconfig"; sourceTree = "<group>"; };
-		2560F205D16CA9E5E652FCA7 /* Pods_ARtourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3D36572373AF7B001F5A36 /* ARtour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARtour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E3D365C2373AF7B001F5A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,12 +63,16 @@
 		4E3D368A2373B4BE001F5A36 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4E3D368C2373B4D7001F5A36 /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
 		4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		574936C2270E2B7E2BEB27DE /* Pods_ARtourUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtourUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58267AC3C74CA2701BAFB4D0 /* Pods-ARtourUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourUITests.debug.xcconfig"; path = "Target Support Files/Pods-ARtourUITests/Pods-ARtourUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6411CCC5392C6F4DC8CB1551 /* Pods-ARtourUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourUITests.release.xcconfig"; path = "Target Support Files/Pods-ARtourUITests/Pods-ARtourUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A939391773EA806ED7DD556B /* Pods-ARtourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.debug.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AB616B0C4529F27654637BDD /* Pods_ARtour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B41766272A2ED7CC6EA198AC /* Pods-ARtourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.release.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.release.xcconfig"; sourceTree = "<group>"; };
+		4EB903E323CED6C300589315 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = SOURCE_ROOT; };
+		53E5609261D5BBEA800FD2B1 /* Pods-ARtourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.debug.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A2C28316DBB3D23BFB58104 /* Pods-ARtourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.release.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C749016CB509AECE92FB39B /* Pods_ARtourUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtourUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C03FB7721291A386CB104AA /* Pods_ARtour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D138DAE3D44C015A581331F /* Pods-ARtour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtour.release.xcconfig"; path = "Target Support Files/Pods-ARtour/Pods-ARtour.release.xcconfig"; sourceTree = "<group>"; };
+		AC71DEE9CA819CD620754AC7 /* Pods_ARtourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FE1DE271AE38EB47795D9F /* Pods-ARtourUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourUITests.debug.xcconfig"; path = "Target Support Files/Pods-ARtourUITests/Pods-ARtourUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECED394AFFBB4A6EAE0129E9 /* Pods-ARtourUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourUITests.release.xcconfig"; path = "Target Support Files/Pods-ARtourUITests/Pods-ARtourUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F31DD4BB576C425CBCD2D820 /* Pods-ARtour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtour.debug.xcconfig"; path = "Target Support Files/Pods-ARtour/Pods-ARtour.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049E63FF9F2E88C931DFDFC1 /* Pods_ARtour.framework in Frameworks */,
+				487EEFC9F26A058A09E38F9E /* Pods_ARtour.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1DA72C1359C2AF528095964 /* Pods_ARtourTests.framework in Frameworks */,
+				F490A70470B40B2B45E2FBFA /* Pods_ARtourTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FB1A3EA98B5B3ACD1FDF1B3 /* Pods_ARtourUITests.framework in Frameworks */,
+				4A69173708AB010EBB1BCA7F /* Pods_ARtourUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +111,7 @@
 				4E3D367B2373AF7E001F5A36 /* ARtourUITests */,
 				4E3D36582373AF7B001F5A36 /* Products */,
 				D8B1DBC5AF94057FC7356534 /* Pods */,
-				AC1656FDD56EBA3528D37B49 /* Frameworks */,
+				68AEA33866C6833F8E367B5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,7 @@
 			children = (
 				4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */,
 				4E3D368A2373B4BE001F5A36 /* MainViewController.swift */,
+				4EB903E323CED6C300589315 /* PopUpViewController.swift */,
 				4E3D368C2373B4D7001F5A36 /* TourViewController.swift */,
 				4E3D365C2373AF7B001F5A36 /* ViewController.swift */,
 				4E3D365E2373AF7B001F5A36 /* Experience.rcproject */,
@@ -156,12 +161,12 @@
 			path = ARtourUITests;
 			sourceTree = "<group>";
 		};
-		AC1656FDD56EBA3528D37B49 /* Frameworks */ = {
+		68AEA33866C6833F8E367B5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB616B0C4529F27654637BDD /* Pods_ARtour.framework */,
-				2560F205D16CA9E5E652FCA7 /* Pods_ARtourTests.framework */,
-				574936C2270E2B7E2BEB27DE /* Pods_ARtourUITests.framework */,
+				8C03FB7721291A386CB104AA /* Pods_ARtour.framework */,
+				AC71DEE9CA819CD620754AC7 /* Pods_ARtourTests.framework */,
+				7C749016CB509AECE92FB39B /* Pods_ARtourUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,12 +174,12 @@
 		D8B1DBC5AF94057FC7356534 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				23B9F244BC67D62E5FA7DD69 /* Pods-ARtour.debug.xcconfig */,
-				14F7AC6B42EA7215DC69AC11 /* Pods-ARtour.release.xcconfig */,
-				A939391773EA806ED7DD556B /* Pods-ARtourTests.debug.xcconfig */,
-				B41766272A2ED7CC6EA198AC /* Pods-ARtourTests.release.xcconfig */,
-				58267AC3C74CA2701BAFB4D0 /* Pods-ARtourUITests.debug.xcconfig */,
-				6411CCC5392C6F4DC8CB1551 /* Pods-ARtourUITests.release.xcconfig */,
+				F31DD4BB576C425CBCD2D820 /* Pods-ARtour.debug.xcconfig */,
+				8D138DAE3D44C015A581331F /* Pods-ARtour.release.xcconfig */,
+				53E5609261D5BBEA800FD2B1 /* Pods-ARtourTests.debug.xcconfig */,
+				6A2C28316DBB3D23BFB58104 /* Pods-ARtourTests.release.xcconfig */,
+				D1FE1DE271AE38EB47795D9F /* Pods-ARtourUITests.debug.xcconfig */,
+				ECED394AFFBB4A6EAE0129E9 /* Pods-ARtourUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -186,12 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E3D36812373AF7E001F5A36 /* Build configuration list for PBXNativeTarget "ARtour" */;
 			buildPhases = (
-				F4156FBB00C589D8884CC78C /* [CP] Check Pods Manifest.lock */,
+				090183EA4D843529A060CD58 /* [CP] Check Pods Manifest.lock */,
 				4E3D36532373AF7B001F5A36 /* Sources */,
 				4E3D36542373AF7B001F5A36 /* Frameworks */,
 				4E3D36552373AF7B001F5A36 /* Resources */,
-				EA4DEC92B669A8056D73B29A /* [CP] Embed Pods Frameworks */,
-				27A239D2989E2E3040050252 /* [CP] Copy Pods Resources */,
+				256921EAFBDE138C824BE28E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,7 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E3D36842373AF7E001F5A36 /* Build configuration list for PBXNativeTarget "ARtourTests" */;
 			buildPhases = (
-				1F887F08F814BC052ADE35BD /* [CP] Check Pods Manifest.lock */,
+				4C80BDA726B5FCCFD118E67C /* [CP] Check Pods Manifest.lock */,
 				4E3D36692373AF7E001F5A36 /* Sources */,
 				4E3D366A2373AF7E001F5A36 /* Frameworks */,
 				4E3D366B2373AF7E001F5A36 /* Resources */,
@@ -225,7 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E3D36872373AF7E001F5A36 /* Build configuration list for PBXNativeTarget "ARtourUITests" */;
 			buildPhases = (
-				02675E6F5D9A0A87E3307F2D /* [CP] Check Pods Manifest.lock */,
+				339C3DC3316C09759957C736 /* [CP] Check Pods Manifest.lock */,
 				4E3D36742373AF7E001F5A36 /* Sources */,
 				4E3D36752373AF7E001F5A36 /* Frameworks */,
 				4E3D36762373AF7E001F5A36 /* Resources */,
@@ -314,85 +318,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02675E6F5D9A0A87E3307F2D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ARtourUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1F887F08F814BC052ADE35BD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ARtourTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		27A239D2989E2E3040050252 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA4DEC92B669A8056D73B29A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F4156FBB00C589D8884CC78C /* [CP] Check Pods Manifest.lock */ = {
+		090183EA4D843529A060CD58 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,6 +340,67 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		256921EAFBDE138C824BE28E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARtour/Pods-ARtour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		339C3DC3316C09759957C736 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARtourUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C80BDA726B5FCCFD118E67C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARtourTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -422,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */,
+				4EB903E423CED6C300589315 /* PopUpViewController.swift in Sources */,
 				4E3D365D2373AF7B001F5A36 /* ViewController.swift in Sources */,
 				4E3D365B2373AF7B001F5A36 /* AppDelegate.swift in Sources */,
 				4E3D365F2373AF7B001F5A36 /* Experience.rcproject in Sources */,
@@ -434,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3D36722373AF7E001F5A36 /* ARtourTests.swift in Sources */,
+				4EB903E523CED6C300589315 /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3D367D2373AF7E001F5A36 /* ARtourUITests.swift in Sources */,
+				4EB903E623CED6C300589315 /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,9 +586,9 @@
 		};
 		4E3D36822373AF7E001F5A36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23B9F244BC67D62E5FA7DD69 /* Pods-ARtour.debug.xcconfig */;
+			baseConfigurationReference = F31DD4BB576C425CBCD2D820 /* Pods-ARtour.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5PZNTS9QG;
@@ -617,9 +607,9 @@
 		};
 		4E3D36832373AF7E001F5A36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14F7AC6B42EA7215DC69AC11 /* Pods-ARtour.release.xcconfig */;
+			baseConfigurationReference = 8D138DAE3D44C015A581331F /* Pods-ARtour.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5PZNTS9QG;
@@ -638,7 +628,7 @@
 		};
 		4E3D36852373AF7E001F5A36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A939391773EA806ED7DD556B /* Pods-ARtourTests.debug.xcconfig */;
+			baseConfigurationReference = 53E5609261D5BBEA800FD2B1 /* Pods-ARtourTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -660,7 +650,7 @@
 		};
 		4E3D36862373AF7E001F5A36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B41766272A2ED7CC6EA198AC /* Pods-ARtourTests.release.xcconfig */;
+			baseConfigurationReference = 6A2C28316DBB3D23BFB58104 /* Pods-ARtourTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -682,7 +672,7 @@
 		};
 		4E3D36882373AF7E001F5A36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58267AC3C74CA2701BAFB4D0 /* Pods-ARtourUITests.debug.xcconfig */;
+			baseConfigurationReference = D1FE1DE271AE38EB47795D9F /* Pods-ARtourUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -702,7 +692,7 @@
 		};
 		4E3D36892373AF7E001F5A36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6411CCC5392C6F4DC8CB1551 /* Pods-ARtourUITests.release.xcconfig */;
+			baseConfigurationReference = ECED394AFFBB4A6EAE0129E9 /* Pods-ARtourUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -19,7 +19,8 @@
 
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
-  pod 'GoogleSignIn'
-
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
 
 end

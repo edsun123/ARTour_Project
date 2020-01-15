@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         FirebaseApp.configure() // Use Firebase library to configure APIs
+        let db = Firestore.firestore()
+        print(db)
         
         return true
     }
