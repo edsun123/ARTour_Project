@@ -1,14 +1,14 @@
 //
-//  TourViewController.swift
+//  WelcomeViewController.swift
 //  ARtour
 //
-//  Created by Sebastian Nevarez on 11/6/19.
-//  Copyright © 2019 SeniorDesign. All rights reserved.
+//  Created by Sebastian Nevarez on 1/17/20.
+//  Copyright © 2020 SeniorDesign. All rights reserved.
 //
 
 import UIKit
 
-class TourViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +16,9 @@ class TourViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func StartButton(_ sender: Any) {
+    @IBAction func RequestAccess(_ sender: Any) {
         
-        //user join group
-        //program segue to AR
+        //Request access to location, bluetooth, and camera
     }
     
     /*

@@ -22,6 +22,12 @@
 		4E5558F923CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
 		4E5558FA23CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
 		4E5558FB23CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
+		4E86320E23D2938A00D87E5F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */; };
+		4E86320F23D2938A00D87E5F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */; };
+		4E86321023D2938A00D87E5F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */; };
+		4E86321223D29C4000D87E5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86321123D29C4000D87E5F /* WelcomeViewController.swift */; };
+		4E86321323D29C4000D87E5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86321123D29C4000D87E5F /* WelcomeViewController.swift */; };
+		4E86321423D29C4000D87E5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86321123D29C4000D87E5F /* WelcomeViewController.swift */; };
 		4EB903E423CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
 		4EB903E523CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
 		4EB903E623CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
@@ -63,6 +69,8 @@
 		4E3D368A2373B4BE001F5A36 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4E3D368C2373B4D7001F5A36 /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
 		4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		4E86321123D29C4000D87E5F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4EB903E323CED6C300589315 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = SOURCE_ROOT; };
 		53E5609261D5BBEA800FD2B1 /* Pods-ARtourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.debug.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A2C28316DBB3D23BFB58104 /* Pods-ARtourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.release.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,10 +137,12 @@
 			isa = PBXGroup;
 			children = (
 				4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */,
+				4E86321123D29C4000D87E5F /* WelcomeViewController.swift */,
 				4E3D368A2373B4BE001F5A36 /* MainViewController.swift */,
 				4EB903E323CED6C300589315 /* PopUpViewController.swift */,
 				4E3D368C2373B4D7001F5A36 /* TourViewController.swift */,
 				4E3D365C2373AF7B001F5A36 /* ViewController.swift */,
+				4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */,
 				4E3D365E2373AF7B001F5A36 /* Experience.rcproject */,
 				4E3D36602373AF7B001F5A36 /* Main.storyboard */,
 				4E3D36632373AF7E001F5A36 /* Assets.xcassets */,
@@ -409,6 +419,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */,
+				4E86321223D29C4000D87E5F /* WelcomeViewController.swift in Sources */,
+				4E86320E23D2938A00D87E5F /* QuestionsViewController.swift in Sources */,
 				4EB903E423CED6C300589315 /* PopUpViewController.swift in Sources */,
 				4E3D365D2373AF7B001F5A36 /* ViewController.swift in Sources */,
 				4E3D365B2373AF7B001F5A36 /* AppDelegate.swift in Sources */,
@@ -422,7 +434,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3D36722373AF7E001F5A36 /* ARtourTests.swift in Sources */,
+				4E86321323D29C4000D87E5F /* WelcomeViewController.swift in Sources */,
 				4EB903E523CED6C300589315 /* PopUpViewController.swift in Sources */,
+				4E86320F23D2938A00D87E5F /* QuestionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +445,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3D367D2373AF7E001F5A36 /* ARtourUITests.swift in Sources */,
+				4E86321423D29C4000D87E5F /* WelcomeViewController.swift in Sources */,
 				4EB903E623CED6C300589315 /* PopUpViewController.swift in Sources */,
+				4E86321023D2938A00D87E5F /* QuestionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,9 +15,39 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    //In this view controller I want to request access to Location, Bluetooth, and Camera
 
+    @IBAction func FutureTour1(_ sender: Any) {
+
+        //future tour alert
+        let alert = UIAlertController(title: "Future Tour", message: "This tour is still being developed, please check back later", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in }
+        alert.addAction(action)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func FutureTour2(_ sender: Any) {
+    
+        //future tour alert
+        let alert = UIAlertController(title: "Future Tour", message: "This tour is still being developed, please check back later", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in }
+        alert.addAction(action)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func FutureTour3(_ sender: Any) {
+    
+        //future tour alert
+        let alert = UIAlertController(title: "Future Tour", message: "This tour is still being developed, please check back later", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in }
+        alert.addAction(action)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
