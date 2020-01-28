@@ -13,8 +13,8 @@ class PopUpViewController: UIViewController {
 
     var db: Firestore!
     @IBOutlet weak var TextField: UITextField!
-    var access = ""
-    var exs = 1
+    var access: String = ""
+    var liveDoc: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,17 +29,34 @@ class PopUpViewController: UIViewController {
     
     @IBAction func AccessCode(_ sender: Any) { //when the user clicks continue
         
+        var goodDoc: Bool = false
+        
         self.access = TextField.text!
         print("access = \(access)")
         
-        verifyCode()
+        let num = Int.random(in: 0..<25)
+        print("number = \(num)")
         
-        if exs == 1 { //add user to the tour group in firestore
-            
-            let num = Int.random(in: 0..<25)
-            
+        let docRef = db.collection("Tour").document("Engineering").collection("TourGroups").document("x5")
+
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                print("Found document")
+                goodDoc = true
+                self.liveDoc = goodDoc
+            } else {
+                let alert = UIAlertController(title: "Invalid Access Code", message: "You have entered an invalid access code, please try again", preferredStyle: .alert)
+                
+                let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in }
+                alert.addAction(action)
+                
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+        
+        if goodDoc == true {
             var ref: DocumentReference? = nil
-            ref = db.collection("Tour").document(access).collection("Users").addDocument(data: [
+            ref = db.collection("Tour").document("Engineering").collection("TourGroups").document(access).collection("Users").addDocument(data: [
                 "number": num
             ]) { err in
                 if let err = err {
@@ -48,46 +65,33 @@ class PopUpViewController: UIViewController {
                     print("Document added with ID: \(ref!.documentID)")
                 }
             }
-            
-        } else { //trigger alert letting user know they entered a bad access code
-
-            print("Error tour group does not exists")
-            
-            let alert = UIAlertController(title: "Invalid Access Code", message: "You have entered an invalid access code. Please try again", preferredStyle: .alert)
-            
-            let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
-                self.TextField.text = ""
-            }
-            alert.addAction(action)
-            
-            self.present(alert, animated: true, completion: nil)
         }
     }
     
-    func verifyCode() { //function to verify the user input access code
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
 
-        let docRef = db.collection("Tour").document(access)
+        print("liveDoc = \(liveDoc)")
         
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                print("Document exists")
-            } else {
-                self.exs = 0
-                print("Error document does not exist")
+        if identifier == "TourSegue"{
+            if liveDoc == false {
+
+                print("Error, can't verify document existence")
+                TextField.text = ""
+                return false //stop segue
             }
         }
-        
-        print("exs = \(self.exs)")
+
+        return true //goodDoc == true, document exists
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        // Get the new view controller using segue.destination.
+//        let vc = segue.destination as! TourViewController //FIX THIS LINE
+//        //when a user clicks cancel app is trying to go back but segue says go forward
+//
+//        // Pass the selected object to the new view controller.
+//        vc.accessCode = access
+//    }
 
 }

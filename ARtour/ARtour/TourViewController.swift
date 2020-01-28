@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class TourViewController: UIViewController {
 
+    //var db: Firestore!
+    //var accessCode: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,7 +22,8 @@ class TourViewController: UIViewController {
     
     @IBAction func StartButton(_ sender: Any) {
         
-        //user join group
+        //user join tour group
+        
         //program segue to AR
     }
     

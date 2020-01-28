@@ -16,11 +16,6 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func RequestAccess(_ sender: Any) {
-        
-        //Request access to location, bluetooth, and camera
-    }
-    
     /*
     // MARK: - Navigation
 

@@ -7,13 +7,42 @@
 //
 
 import UIKit
+import CoreLocation
+import CoreBluetooth
 
 class MainViewController: UIViewController {
 
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //Request access to location
+        let status = CLLocationManager.authorizationStatus()
+        switch status {
+            
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+            return
+            
+        case .denied, .restricted:
+            let alert = UIAlertController(title: "Location services disabled", message: "Please enable location services in Settings", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+            return
+            
+        case .authorizedAlways, .authorizedWhenInUse:
+            break
+            
+        @unknown default:
+            print("UNKNOWN ERROR")
+            return
+        }
+        
+        //Request access to bluetooth
     }
 
     @IBAction func FutureTour1(_ sender: Any) {
@@ -48,6 +77,7 @@ class MainViewController: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
+    
     /*
     // MARK: - Navigation
 
