@@ -28,27 +28,82 @@ class QuestionsViewController: UIViewController {
         let settings = FirestoreSettings()
         Firestore.firestore().settings = settings
         db = Firestore.firestore()
+        
+        //if email already in database, autofill
     }
     
     @IBAction func SubmitEmail(_ sender: Any) {
         
-        //save email
+        //get email
         self.email = Email.text!
-        print("email = \(email)")
         
-        //if already in database, autofill
-        //saved in user's document
+        //save it in user's document
+        let docRef = db.collection("Tours").document("Engineering").collection("TourGroups").document(self.codigo).collection("Users").document(self.identi)
+        docRef.updateData(["email": self.email]) { err in
+
+            if let err = err {
+                print("Error updating document: \(err)")
+                let alert = UIAlertController(title: "Error Saving Email", message: "There was an error saving your email address. Please try again. If problems persist, please speak with someone at the front desk in ERB 107", preferredStyle: .alert)
+                
+                let action = UIAlertAction(title: "OK", style: .default) {
+                    (action:UIAlertAction) in
+                }
+
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+
+            } else {
+                print("Document successfully updated")
+                
+                let alert = UIAlertController(title: "Email Saved", message: "Your email address has been recorded. Answers to your questions will be sent to this address.", preferredStyle: .alert)
+                
+                let action = UIAlertAction(title: "OK", style: .default) {
+                    (action:UIAlertAction) in
+                }
+
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func SubmitQuestions(_ sender: Any) {
         
-        //save questions
+        //get the questions
         self.questions = Questions.text!
         print("questions = \(questions)")
         
-        //can submit as many as they want
-        //clear everytime user hits submit
-        //questions collection from user, new document for every question
+        //save it in user's document
+        var ref: DocumentReference? = nil
+        ref = db.collection("Tours").document("Engineering").collection("TourGroups").document(self.codigo).collection("Users").document(self.identi).collection("Quesitons").addDocument(data: ["quesiton": self.questions]) { err in
+
+            if let err = err {
+                print("Error adding document: \(err)")
+                let alert = UIAlertController(title: "Error Saving Questions", message: "There was an error saving your questions. Please try again. If problems persist, please speak with someone at the front desk in ERB 107", preferredStyle: .alert)
+                
+                let action = UIAlertAction(title: "OK", style: .default) {
+                    (action:UIAlertAction) in
+                }
+
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+                
+                //popup saying question received
+                let alert = UIAlertController(title: "Question Saved", message: "Your question has been recorded.", preferredStyle: .alert)
+                
+                let action = UIAlertAction(title: "OK", style: .default) {
+                    (action:UIAlertAction) in
+                }
+
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+        
+        Questions.text! = "" //clear everytime
     }
     
     /*

@@ -28,7 +28,7 @@ class MainViewController: UIViewController {
             return
             
         case .denied, .restricted:
-            let alert = UIAlertController(title: "Location services disabled", message: "Please enable location services in Settings", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Location Services Disabled", message: "Please enable location services in Settings", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alert.addAction(okAction)
             present(alert, animated: true, completion: nil)

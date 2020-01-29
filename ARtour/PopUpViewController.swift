@@ -15,6 +15,7 @@ class PopUpViewController: UIViewController {
     @IBOutlet weak var TextField: UITextField!
     var access: String = ""
     var docID: String = ""
+    var num: Int = 0
     
     override func viewDidLoad() {
         
@@ -32,15 +33,17 @@ class PopUpViewController: UIViewController {
         self.access = TextField.text!
         print("access = \(access)")
         
+        num = Int.random(in: 0..<100)
+        
         let docRef = db.collection("Tours").document("Engineering").collection("TourGroups").document(access)
-        docRef.getDocument {
-            (document, error) in
+        docRef.getDocument { (document, error) in
+            
             if let document = document, document.exists {
                 print("Found document")
 
                 var ref: DocumentReference? = nil
-                ref = self.db.collection("Tours").document("Engineering").collection("TourGroups").document(self.access).collection("Users").addDocument(data: ["number": 22]) {
-                    err in
+                ref = self.db.collection("Tours").document("Engineering").collection("TourGroups").document(self.access).collection("Users").addDocument(data: ["number": self.num]) { err in
+                    
                     if let err = err {
                         print("Error adding document: \(err)")
 

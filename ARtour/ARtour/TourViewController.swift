@@ -21,15 +21,10 @@ class TourViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func StartButton(_ sender: Any) {
-        
-        //program segue to AR
-    }
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if (segue.identifier == "QuestionSegue") {
+            
             let vc = segue.destination as! QuestionsViewController // Get the view controller
             vc.codigo = self.accessCode // Pass the selected objects to the view controller
             vc.identi = self.docCreate
