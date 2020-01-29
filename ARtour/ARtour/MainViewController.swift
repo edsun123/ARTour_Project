@@ -15,8 +15,8 @@ class MainViewController: UIViewController {
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         
         //Request access to location
@@ -48,33 +48,39 @@ class MainViewController: UIViewController {
     @IBAction func FutureTour1(_ sender: Any) {
 
         //future tour alert
-        let alert = UIAlertController(title: "Future Tour", message: "This tour is still being developed, please check back later", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Future Tour", message: "This tour is still under development, please check back later", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in }
+        let action = UIAlertAction(title: "OK", style: .default) {
+            (action:UIAlertAction) in
+        }
+
         alert.addAction(action)
-        
         self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func FutureTour2(_ sender: Any) {
     
         //future tour alert
-        let alert = UIAlertController(title: "Future Tour", message: "This tour is still being developed, please check back later", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Future Tour", message: "This tour is still under development, please check back later", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in }
+        let action = UIAlertAction(title: "OK", style: .default) {
+            (action:UIAlertAction) in
+        }
+
         alert.addAction(action)
-        
         self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func FutureTour3(_ sender: Any) {
     
         //future tour alert
-        let alert = UIAlertController(title: "Future Tour", message: "This tour is still being developed, please check back later", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Future Tour", message: "This tour is still under development, please check back later", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in }
+        let action = UIAlertAction(title: "OK", style: .default) {
+            (action:UIAlertAction) in
+        }
+
         alert.addAction(action)
-        
         self.present(alert, animated: true, completion: nil)
     }
     

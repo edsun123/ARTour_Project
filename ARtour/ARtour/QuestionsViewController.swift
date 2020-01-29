@@ -13,13 +13,15 @@ class QuestionsViewController: UIViewController {
 
     var db: Firestore!
     @IBOutlet weak var Email: UITextField!
-    var email = ""
     @IBOutlet weak var Questions: UITextField!
+    var email = ""
     var questions = ""
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var codigo: String = ""
+    var identi: String = ""
 
+    override func viewDidLoad() {
+
+        super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         //firestore setup

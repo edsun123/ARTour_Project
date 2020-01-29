@@ -209,7 +209,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="AccessCode:" destination="KvO-y8-QCj" eventType="touchUpInside" id="n9Z-MI-bmU"/>
-                                            <segue destination="amH-94-Jyh" kind="show" identifier="TourSegue" id="9CI-5j-lpR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QM-Ai-lzY">
@@ -273,6 +272,7 @@
                     <navigationItem key="navigationItem" id="DJ3-Bs-9S8"/>
                     <connections>
                         <outlet property="TextField" destination="MLv-Zn-nFw" id="lB1-41-pZQ"/>
+                        <segue destination="amH-94-Jyh" kind="show" identifier="TourSegue" id="244-3B-uZz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLh-Qn-oi7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -309,7 +309,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="cXM-EG-iyT" kind="show" id="pK0-vQ-ojW"/>
+                                    <segue destination="cXM-EG-iyT" kind="show" identifier="QuestionSegue" id="pK0-vQ-ojW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1B-0w-Mwk">
@@ -329,6 +329,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="StartButton:" destination="amH-94-Jyh" eventType="touchUpInside" id="oBc-eH-wgB"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="c7o-Mc-tQB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCZ-ni-YxV">
@@ -390,7 +391,7 @@
             <objects>
                 <viewController storyboardIdentifier="AR" title="ViewController" id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
                     <arView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </arView>
                     <navigationItem key="navigationItem" id="pkv-Zv-bfa"/>
@@ -537,7 +538,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="pK0-vQ-ojW"/>
         <segue reference="u8Y-OV-bnv"/>
-        <segue reference="ThE-ij-0l9"/>
+        <segue reference="eLd-Pc-1eL"/>
     </inferredMetricsTieBreakers>
 </document>
