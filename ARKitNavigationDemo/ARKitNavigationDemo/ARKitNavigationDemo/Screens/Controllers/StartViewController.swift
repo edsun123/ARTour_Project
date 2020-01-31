@@ -56,6 +56,7 @@ final class StartViewController: UIViewController, Controller {
         // Convert map tap point to coordinate
         let coord: CLLocationCoordinate2D = mapView.convert(touchPoint, toCoordinateFrom: mapView)
         
+//        let coord: CLLocationCoordinate2D (latitude: 42.348568, longitude:  71.103068)
         destinationLocation = coord
     }
     

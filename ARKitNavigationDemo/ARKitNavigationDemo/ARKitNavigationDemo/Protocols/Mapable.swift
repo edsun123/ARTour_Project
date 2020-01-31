@@ -14,7 +14,7 @@ protocol Mapable: class  {
 }
 
 extension Mapable {
-    
+
     func centerMapInInitialCoordinates() {
         if startingLocation != nil {
             DispatchQueue.main.async {
