@@ -75,7 +75,7 @@ class QuestionsViewController: UIViewController {
         
         //save it in user's document
         var ref: DocumentReference? = nil
-        ref = db.collection("Tours").document("Engineering").collection("TourGroups").document(self.codigo).collection("Users").document(self.identi).collection("Quesitons").addDocument(data: ["quesiton": self.questions]) { err in
+        ref = db.collection("Tours").document("Engineering").collection("TourGroups").document(self.codigo).collection("Users").document(self.identi).collection("Questions").addDocument(data: ["quesiton": self.questions]) { err in
 
             if let err = err {
                 print("Error adding document: \(err)")

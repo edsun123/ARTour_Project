@@ -10,7 +10,7 @@
         <!--Main View Controller-->
         <scene sceneID="Fa0-YZ-08M">
             <objects>
-                <viewController storyboardIdentifier="MainPage" id="OG8-Y9-irO" customClass="MainViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainPage" interfaceStyle="dark" id="OG8-Y9-irO" customClass="MainViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mw5-IV-uxV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,43 +139,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-CJ-gG1">
-                                <rect key="frame" x="107" y="412" width="200" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="Welcome">
-                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="RequestAccess:" destination="uen-Z8-Q0y" eventType="touchUpInside" id="NMP-Wq-gUq"/>
-                                    <segue destination="OG8-Y9-irO" kind="presentation" id="DFJ-Nf-TfX"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyT-8T-eT5">
-                                <rect key="frame" x="153.5" y="504" width="107" height="24"/>
+                                <rect key="frame" x="153.5" y="498" width="107" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEj-rH-eH1">
+                                <rect key="frame" x="107" y="418" width="200" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WkS-CJ-gG1" firstAttribute="centerY" secondItem="B34-Ii-GNR" secondAttribute="centerY" id="6cA-4n-aCV"/>
+                            <constraint firstItem="OEj-rH-eH1" firstAttribute="centerX" secondItem="B34-Ii-GNR" secondAttribute="centerX" id="B4l-WO-hBo"/>
                             <constraint firstItem="UyT-8T-eT5" firstAttribute="centerX" secondItem="B34-Ii-GNR" secondAttribute="centerX" id="LoN-YH-rIa"/>
-                            <constraint firstItem="WkS-CJ-gG1" firstAttribute="centerX" secondItem="B34-Ii-GNR" secondAttribute="centerX" id="pl9-yP-5kx"/>
-                            <constraint firstItem="UyT-8T-eT5" firstAttribute="top" secondItem="WkS-CJ-gG1" secondAttribute="bottom" constant="20" id="rGe-RF-z1T"/>
+                            <constraint firstItem="OEj-rH-eH1" firstAttribute="centerY" secondItem="B34-Ii-GNR" secondAttribute="centerY" id="Qjo-Cd-w8c"/>
+                            <constraint firstItem="UyT-8T-eT5" firstAttribute="top" secondItem="OEj-rH-eH1" secondAttribute="bottom" constant="20" id="SOn-cR-MSC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EJ1-81-5GV"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="O5z-1Y-O98" appends="YES" id="jKn-1d-ncM"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <segue destination="OG8-Y9-irO" kind="show" identifier="MainSegue" id="z8u-6a-KfR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yUe-As-R8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="uen-Z8-Q0y" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="O5z-1Y-O98">
+                    <connections>
+                        <action selector="tapAction:" destination="IyC-rt-tFg" id="JO6-r2-CxP"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1888" y="135"/>
         </scene>
         <!--Pop Up View Controller-->
         <scene sceneID="5pY-My-NYj">
             <objects>
-                <viewController storyboardIdentifier="PopUpID" id="KvO-y8-QCj" customClass="PopUpViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopUpID" interfaceStyle="dark" id="KvO-y8-QCj" customClass="PopUpViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7yE-wb-STI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -284,13 +289,13 @@
         <!--Tour View Controller-->
         <scene sceneID="TQ1-RY-e2e">
             <objects>
-                <viewController storyboardIdentifier="TourPage" id="amH-94-Jyh" customClass="TourViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TourPage" interfaceStyle="dark" id="amH-94-Jyh" customClass="TourViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Pu-Q5-p2Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Engineering" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2r-Gl-mgG">
-                                <rect key="frame" x="81" y="156" width="252.5" height="60"/>
+                                <rect key="frame" x="81" y="136" width="252.5" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -314,26 +319,6 @@
                                     <segue destination="cXM-EG-iyT" kind="show" identifier="QuestionSegue" id="pK0-vQ-ojW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1B-0w-Mwk">
-                                <rect key="frame" x="70" y="296" width="274" height="70"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="GoH-lx-wzN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="StartButton:" destination="amH-94-Jyh" eventType="touchUpInside" id="oBc-eH-wgB"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="c7o-Mc-tQB"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCZ-ni-YxV">
                                 <rect key="frame" x="140" y="476" width="134" height="50"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -353,10 +338,29 @@
                                     <segue destination="OG8-Y9-irO" kind="show" id="eLd-Pc-1eL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXk-3m-StG">
+                                <rect key="frame" x="70" y="296" width="274" height="70"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="l90-mQ-IxO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="PushStart:" destination="amH-94-Jyh" eventType="touchUpInside" id="Dul-15-zHL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xnu-nb-4g6" firstAttribute="top" secondItem="q1B-0w-Mwk" secondAttribute="bottom" constant="20" id="DPv-hb-kZ1"/>
+                            <constraint firstItem="fXk-3m-StG" firstAttribute="centerX" secondItem="6Pu-Q5-p2Y" secondAttribute="centerX" id="2nZ-Li-fma"/>
                             <constraint firstItem="g2r-Gl-mgG" firstAttribute="centerX" secondItem="6Pu-Q5-p2Y" secondAttribute="centerX" id="FQ9-Yw-gbr"/>
                             <constraint firstItem="kvf-vQ-6xH" firstAttribute="trailing" secondItem="pCZ-ni-YxV" secondAttribute="trailing" constant="140" id="IS8-gM-079">
                                 <userDefinedRuntimeAttributes>
@@ -373,42 +377,53 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="q1B-0w-Mwk" firstAttribute="top" secondItem="g2r-Gl-mgG" secondAttribute="bottom" constant="80" id="TS6-22-Zf2"/>
                             <constraint firstItem="xnu-nb-4g6" firstAttribute="centerX" secondItem="6Pu-Q5-p2Y" secondAttribute="centerX" id="TaV-yx-O2E"/>
-                            <constraint firstItem="kvf-vQ-6xH" firstAttribute="trailing" secondItem="q1B-0w-Mwk" secondAttribute="trailing" constant="70" id="Tfb-hI-9BM"/>
                             <constraint firstItem="xnu-nb-4g6" firstAttribute="centerY" secondItem="6Pu-Q5-p2Y" secondAttribute="centerY" id="ZOQ-wT-Xio"/>
                             <constraint firstItem="pCZ-ni-YxV" firstAttribute="top" secondItem="xnu-nb-4g6" secondAttribute="bottom" constant="20" id="ago-h9-SSH"/>
-                            <constraint firstItem="q1B-0w-Mwk" firstAttribute="centerX" secondItem="6Pu-Q5-p2Y" secondAttribute="centerX" id="uHW-L5-BfD"/>
+                            <constraint firstItem="fXk-3m-StG" firstAttribute="top" secondItem="g2r-Gl-mgG" secondAttribute="bottom" constant="100" id="dnK-1T-qdD"/>
+                            <constraint firstItem="xnu-nb-4g6" firstAttribute="top" secondItem="fXk-3m-StG" secondAttribute="bottom" constant="20" id="drS-Dy-rkw"/>
+                            <constraint firstItem="kvf-vQ-6xH" firstAttribute="trailing" secondItem="fXk-3m-StG" secondAttribute="trailing" constant="70" id="yut-og-7G5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kvf-vQ-6xH"/>
                     </view>
                     <navigationItem key="navigationItem" id="iHk-ht-IDx"/>
+                    <connections>
+                        <segue destination="WW0-dr-nE9" kind="show" identifier="AugReal" id="DSb-NI-XaC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0d-ED-FNJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="993" y="135"/>
         </scene>
-        <!--ARView-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="PZB-aV-wl2">
             <objects>
-                <viewController storyboardIdentifier="AR" title="ViewController" id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
-                    <arView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="ARPage" id="WW0-dr-nE9" customClass="ViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w8r-12-kwL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arView>
-                    <navigationItem key="navigationItem" id="pkv-Zv-bfa"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAk-zu-hcb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Z0x-dF-Lto"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2mr-r1-Nwq"/>
                     <connections>
-                        <outlet property="arView" destination="8bC-Xf-vdC" id="TPV-4x-avp"/>
+                        <outlet property="sceneView" destination="iAk-zu-hcb" id="QyW-zQ-mbO"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHS-RV-jqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2035" y="135"/>
+            <point key="canvasLocation" x="1956.521739130435" y="124.55357142857142"/>
         </scene>
         <!--Questions View Controller-->
         <scene sceneID="I2p-iE-GJT">
             <objects>
-                <viewController storyboardIdentifier="Preguntas" id="cXM-EG-iyT" customClass="QuestionsViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Preguntas" interfaceStyle="dark" id="cXM-EG-iyT" customClass="QuestionsViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vSp-5C-rYC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -540,12 +555,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGQ-X8-ZdW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2035" y="929"/>
+            <point key="canvasLocation" x="993" y="968"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pK0-vQ-ojW"/>
-        <segue reference="u8Y-OV-bnv"/>
+        <segue reference="244-3B-uZz"/>
         <segue reference="eLd-Pc-1eL"/>
     </inferredMetricsTieBreakers>
 </document>

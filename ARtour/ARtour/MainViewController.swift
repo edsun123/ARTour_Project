@@ -47,7 +47,7 @@ class MainViewController: UIViewController {
 
     @IBAction func FutureTour1(_ sender: Any) {
 
-        //future tour alert
+        //future tour alert CAS
         let alert = UIAlertController(title: "Future Tour", message: "This tour is still under development, please check back later", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "OK", style: .default) {
@@ -60,7 +60,7 @@ class MainViewController: UIViewController {
     
     @IBAction func FutureTour2(_ sender: Any) {
     
-        //future tour alert
+        //future tour alert COM
         let alert = UIAlertController(title: "Future Tour", message: "This tour is still under development, please check back later", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "OK", style: .default) {
@@ -73,7 +73,7 @@ class MainViewController: UIViewController {
     
     @IBAction func FutureTour3(_ sender: Any) {
     
-        //future tour alert
+        //future tour alert QST
         let alert = UIAlertController(title: "Future Tour", message: "This tour is still under development, please check back later", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "OK", style: .default) {
