@@ -15,20 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-WY-74B">
-                                <rect key="frame" x="182" y="423" width="50" height="50"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="9PG-eL-N82"/>
-                                    <constraint firstAttribute="height" constant="50" id="jSc-zS-M8q"/>
-                                </constraints>
-                                <color key="color" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQO-bM-C9B">
+                                <rect key="frame" x="107.5" y="418" width="199.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="STJ-WY-74B" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lbN-6y-gXW"/>
-                            <constraint firstItem="STJ-WY-74B" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="v15-AL-oyw"/>
+                            <constraint firstItem="XQO-bM-C9B" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Nha-8q-7B6"/>
+                            <constraint firstItem="XQO-bM-C9B" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="XKg-Nx-sLD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
