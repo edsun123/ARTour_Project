@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A74AF0931F6CA2480000CD5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AF0921F6CA2480000CD5F /* AppDelegate.swift */; };
-		A74AF0951F6CA2490000CD5F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A74AF0941F6CA2490000CD5F /* art.scnassets */; };
 		A74AF0971F6CA2490000CD5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AF0961F6CA2490000CD5F /* ViewController.swift */; };
 		A74AF09A1F6CA2490000CD5F /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74AF0981F6CA2490000CD5F /* Navigation.storyboard */; };
-		A74AF09C1F6CA2490000CD5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74AF09B1F6CA2490000CD5F /* Assets.xcassets */; };
-		A74AF09F1F6CA2490000CD5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74AF09D1F6CA2490000CD5F /* LaunchScreen.storyboard */; };
 		A74AF0AA1F6CA2490000CD5F /* ARKitNavigationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AF0A91F6CA2490000CD5F /* ARKitNavigationDemoTests.swift */; };
 		A74AF0B51F6CA2490000CD5F /* ARKitNavigationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AF0B41F6CA2490000CD5F /* ARKitNavigationDemoUITests.swift */; };
 		A74AF0C31F6CA2650000CD5F /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AF0C21F6CA2650000CD5F /* NavigationService.swift */; };
@@ -72,11 +69,8 @@
 /* Begin PBXFileReference section */
 		A74AF08F1F6CA2480000CD5F /* ARKitNavigationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitNavigationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74AF0921F6CA2480000CD5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A74AF0941F6CA2490000CD5F /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		A74AF0961F6CA2490000CD5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A74AF0991F6CA2490000CD5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Navigation.storyboard; sourceTree = "<group>"; };
-		A74AF09B1F6CA2490000CD5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A74AF09E1F6CA2490000CD5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A74AF0A01F6CA2490000CD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A74AF0A51F6CA2490000CD5F /* ARKitNavigationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitNavigationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74AF0A91F6CA2490000CD5F /* ARKitNavigationDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitNavigationDemoTests.swift; sourceTree = "<group>"; };
@@ -171,7 +165,6 @@
 			children = (
 				A74AF0A01F6CA2490000CD5F /* Info.plist */,
 				A74AF0921F6CA2480000CD5F /* AppDelegate.swift */,
-				A74AF0F41F6CAA390000CD5F /* Assets */,
 				A74AF0ED1F6CA98F0000CD5F /* Services */,
 				A74AF0EE1F6CA9A90000CD5F /* Screens */,
 				A74AF0EA1F6CA95B0000CD5F /* Protocols */,
@@ -275,16 +268,6 @@
 				A74AF0EF1F6CAA020000CD5F /* Start.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		A74AF0F41F6CAA390000CD5F /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				A74AF0941F6CA2490000CD5F /* art.scnassets */,
-				A74AF09B1F6CA2490000CD5F /* Assets.xcassets */,
-				A74AF09D1F6CA2490000CD5F /* LaunchScreen.storyboard */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		A74AF0FB1F6CAAC80000CD5F /* Coordinators */ = {
@@ -429,10 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A74AF0951F6CA2490000CD5F /* art.scnassets in Resources */,
-				A74AF09F1F6CA2490000CD5F /* LaunchScreen.storyboard in Resources */,
 				A74AF0F01F6CAA020000CD5F /* Start.storyboard in Resources */,
-				A74AF09C1F6CA2490000CD5F /* Assets.xcassets in Resources */,
 				A74AF09A1F6CA2490000CD5F /* Navigation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,14 +531,6 @@
 				A74AF0991F6CA2490000CD5F /* Base */,
 			);
 			name = Navigation.storyboard;
-			sourceTree = "<group>";
-		};
-		A74AF09D1F6CA2490000CD5F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A74AF09E1F6CA2490000CD5F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
