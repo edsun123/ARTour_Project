@@ -8,6 +8,7 @@
 
 import Foundation
 
-protocol NavigationViewControllerDelegate: class {
+protocol NavigationViewControllerDelegate: class
+{
     func reset()
 }

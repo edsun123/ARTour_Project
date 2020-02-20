@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet private var sceneView: ARSCNView!
     
@@ -90,23 +90,23 @@ extension ViewController: MessagePresenting {
     
     // Set session configuration with compass and gravity
     
-    @IBAction func resetButtonTapped(_ sender: Any) {
-    //        delegate?.reset()
-                updateNodes = true
-                if updatedLocations.count > 0 {
-                    startingLocation = CLLocation.bestLocationEstimate(locations: updatedLocations)
-                    //&& mapView.annotations.count == 0
-                    if (startingLocation != nil ) && done == true {
-                        DispatchQueue.main.async {
-        //                    self.centerMapInInitialCoordinates()
-        //                    self.showPointsOfInterestInMap(currentLegs: self.currentLegs)
-        //                    self.addAnnotations()
-                            self.addAnchors(steps: self.steps)
-                        }
-                    }
-                }
-        }
-    
+//    @IBAction func resetButtonTapped(_ sender: Any) {
+//    //        delegate?.reset()
+//                updateNodes = true
+//                if updatedLocations.count > 0 {
+//                    startingLocation = CLLocation.bestLocationEstimate(locations: updatedLocations)
+//                    //&& mapView.annotations.count == 0
+//                    if (startingLocation != nil ) && done == true {
+//                        DispatchQueue.main.async {
+//        //                    self.centerMapInInitialCoordinates()
+//        //                    self.showPointsOfInterestInMap(currentLegs: self.currentLegs)
+//        //                    self.addAnnotations()
+//                            self.addAnchors(steps: self.steps)
+//                        }
+//                    }
+//                }
+//        }
+//
     func runSession() {
 
         configuration.worldAlignment = .gravityAndHeading
@@ -126,6 +126,21 @@ extension ViewController: MessagePresenting {
 //                        }
 //                    }
 //                }
+    }
+    
+    func showNodes(){
+        updateNodes = true
+        if updatedLocations.count > 0 {
+            startingLocation = CLLocation.bestLocationEstimate(locations: updatedLocations)
+            if (startingLocation != nil /*&& mapView.annotations.count == 0*/) && done == true {
+                DispatchQueue.main.async {
+                    //self.centerMapInInitialCoordinates()
+                    //self.showPointsOfInterestInMap(currentLegs: self.currentLegs)
+                    self.addAnnotations()
+                    self.addAnchors(steps: self.steps)
+                }
+            }
+        }
     }
     
     // Render nodes when user touches screen
@@ -156,20 +171,20 @@ extension ViewController: MessagePresenting {
 //        }
 //    }
 
-//    private func addAnnotations() {
-//        annotations.forEach { annotation in
-//            guard let map = mapView else { return }
-//            DispatchQueue.main.async {
-//                if let title = annotation.title, title.hasPrefix("N") {
-//                    self.annotationColor = .green
-//                } else {
-//                    self.annotationColor = .blue
-//                }
-//                map.addAnnotation(annotation)
-//                map.add(MKCircle(center: annotation.coordinate, radius: 0.2))
-//            }
-//        }
-//    }
+    private func addAnnotations() {
+        annotations.forEach { annotation in
+            guard let map = mapView else { return }
+            DispatchQueue.main.async {
+                if let title = annotation.title, title.hasPrefix("N") {
+                    self.annotationColor = .green
+                } else {
+                    self.annotationColor = .blue
+                }
+                map.addAnnotation(annotation)
+                map.add(MKCircle(center: annotation.coordinate, radius: 0.2))
+            }
+        }
+    }
 //
     private func updateNodePosition() {
         if updateNodes {
@@ -196,13 +211,13 @@ extension ViewController: MessagePresenting {
     
     // For navigation route step add sphere node
     
-    private func addSphere(for step: MKRouteStep) {
+    private func addSphere(for step: MKRoute.Step) {
         let stepLocation = step.getLocation()
         let locationTransform = MatrixHelper.transformMatrix(for: matrix_identity_float4x4, originLocation: startingLocation, location: stepLocation)
         let stepAnchor = ARAnchor(transform: locationTransform)
         let sphere = BaseNode(title: step.instructions, location: stepLocation)
         anchors.append(stepAnchor)
-        sphere.addNode(with: 0.3, and: .green, and: step.instructions)
+        sphere.addNode(with: 0.2, and: .green, and: step.instructions)
         sphere.location = stepLocation
         sphere.anchor = stepAnchor
         sceneView.session.add(anchor: stepAnchor)
@@ -216,7 +231,7 @@ extension ViewController: MessagePresenting {
         let locationTransform = MatrixHelper.transformMatrix(for: matrix_identity_float4x4, originLocation: startingLocation, location: location)
         let stepAnchor = ARAnchor(transform: locationTransform)
         let sphere = BaseNode(title: "Title", location: location)
-        sphere.addSphere(with: 0.25, and: .blue)
+        sphere.addSphere(with: 0.2, and: .blue)
         anchors.append(stepAnchor)
         sphere.location = location
         sceneView.session.add(anchor: stepAnchor)
@@ -254,6 +269,7 @@ extension ViewController: LocationServiceDelegate {
     func trackingLocation(for currentLocation: CLLocation) {
         if currentLocation.horizontalAccuracy <= 65.0 {
             updatedLocations.append(currentLocation)
+            showNodes()
             updateNodePosition()
         }
     }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>394516336829-97kh0743hecnu1e78n360o65rn9kc6v5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.394516336829-97kh0743hecnu1e78n360o65rn9kc6v5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDIEB-cYVvh5e31igxlGZMXgeUin6h5lcA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>394516336829</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.SeniorDesign.ARtour</string>
+	<key>PROJECT_ID</key>
+	<string>artour-9158b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>artour-9158b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:394516336829:ios:936a51e6fb73269824e7d4</string>
+	<key>DATABASE_URL</key>
+	<string>https://artour-9158b.firebaseio.com</string>
+</dict>
+</plist>
