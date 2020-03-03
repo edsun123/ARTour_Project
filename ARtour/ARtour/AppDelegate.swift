@@ -6,8 +6,8 @@
 //  Copyright © 2019 SeniorDesign. All rights reserved.
 //
 
-import UIKit
 import Firebase
+import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+
         //firebase and firestore setup
         FirebaseApp.configure()
         let db = Firestore.firestore()

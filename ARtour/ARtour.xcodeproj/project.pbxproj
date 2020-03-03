@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		487EEFC9F26A058A09E38F9E /* Pods_ARtour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C03FB7721291A386CB104AA /* Pods_ARtour.framework */; };
 		4A69173708AB010EBB1BCA7F /* Pods_ARtourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C749016CB509AECE92FB39B /* Pods_ARtourUITests.framework */; };
+		4E31815323FF38C500A11F70 /* BeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31815223FF38C500A11F70 /* BeaconViewController.swift */; };
 		4E3D365B2373AF7B001F5A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */; };
 		4E3D365D2373AF7B001F5A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365C2373AF7B001F5A36 /* ViewController.swift */; };
 		4E3D36622373AF7B001F5A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3D36602373AF7B001F5A36 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 		4E3D367D2373AF7E001F5A36 /* ARtourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D367C2373AF7E001F5A36 /* ARtourUITests.swift */; };
 		4E3D368B2373B4BE001F5A36 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D368A2373B4BE001F5A36 /* MainViewController.swift */; };
 		4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D368C2373B4D7001F5A36 /* TourViewController.swift */; };
+		4E43B1AE240EDC370011B25A /* BeaconDistanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43B1AD240EDC370011B25A /* BeaconDistanceTableViewController.swift */; };
 		4E47805023EB4FDB00D43FAF /* arrow.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4E47804F23EB4FDB00D43FAF /* arrow.dae */; };
 		4E5558F923CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
 		4E5558FA23CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
@@ -28,6 +30,7 @@
 		4E86321223D29C4000D87E5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86321123D29C4000D87E5F /* WelcomeViewController.swift */; };
 		4E86321323D29C4000D87E5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86321123D29C4000D87E5F /* WelcomeViewController.swift */; };
 		4E86321423D29C4000D87E5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86321123D29C4000D87E5F /* WelcomeViewController.swift */; };
+		4E943B952405B53B00E251D3 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E943B942405B53B00E251D3 /* EmailViewController.swift */; };
 		4EB903E423CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
 		4EB903E523CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
 		4EB903E623CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
@@ -52,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E31815223FF38C500A11F70 /* BeaconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconViewController.swift; sourceTree = "<group>"; };
 		4E3D36572373AF7B001F5A36 /* ARtour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARtour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E3D365C2373AF7B001F5A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,10 +71,12 @@
 		4E3D367E2373AF7E001F5A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E3D368A2373B4BE001F5A36 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4E3D368C2373B4D7001F5A36 /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
+		4E43B1AD240EDC370011B25A /* BeaconDistanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDistanceTableViewController.swift; sourceTree = "<group>"; };
 		4E47804F23EB4FDB00D43FAF /* arrow.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = arrow.dae; sourceTree = "<group>"; };
 		4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		4E86321123D29C4000D87E5F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		4E943B942405B53B00E251D3 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		4EB903E323CED6C300589315 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = SOURCE_ROOT; };
 		53E5609261D5BBEA800FD2B1 /* Pods-ARtourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.debug.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A2C28316DBB3D23BFB58104 /* Pods-ARtourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.release.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,12 +147,15 @@
 				4E3D368A2373B4BE001F5A36 /* MainViewController.swift */,
 				4EB903E323CED6C300589315 /* PopUpViewController.swift */,
 				4E3D368C2373B4D7001F5A36 /* TourViewController.swift */,
-				4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */,
 				4E3D365C2373AF7B001F5A36 /* ViewController.swift */,
-				4E3D36602373AF7B001F5A36 /* Main.storyboard */,
-				4E47804F23EB4FDB00D43FAF /* arrow.dae */,
-				4E3D36632373AF7E001F5A36 /* Assets.xcassets */,
+				4E31815223FF38C500A11F70 /* BeaconViewController.swift */,
+				4E43B1AD240EDC370011B25A /* BeaconDistanceTableViewController.swift */,
+				4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */,
+				4E943B942405B53B00E251D3 /* EmailViewController.swift */,
 				4E3D36652373AF7E001F5A36 /* LaunchScreen.storyboard */,
+				4E3D36602373AF7B001F5A36 /* Main.storyboard */,
+				4E3D36632373AF7E001F5A36 /* Assets.xcassets */,
+				4E47804F23EB4FDB00D43FAF /* arrow.dae */,
 				4E3D36682373AF7E001F5A36 /* Info.plist */,
 				4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */,
 			);
@@ -419,10 +428,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E43B1AE240EDC370011B25A /* BeaconDistanceTableViewController.swift in Sources */,
 				4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */,
+				4E943B952405B53B00E251D3 /* EmailViewController.swift in Sources */,
 				4E86321223D29C4000D87E5F /* WelcomeViewController.swift in Sources */,
 				4E86320E23D2938A00D87E5F /* QuestionsViewController.swift in Sources */,
 				4EB903E423CED6C300589315 /* PopUpViewController.swift in Sources */,
+				4E31815323FF38C500A11F70 /* BeaconViewController.swift in Sources */,
 				4E3D365D2373AF7B001F5A36 /* ViewController.swift in Sources */,
 				4E3D365B2373AF7B001F5A36 /* AppDelegate.swift in Sources */,
 				4E3D368B2373B4BE001F5A36 /* MainViewController.swift in Sources */,
@@ -614,11 +626,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.ARtour;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.myARtour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -636,11 +648,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.ARtour;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.myARtour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
