@@ -6,13 +6,16 @@
 //  Copyright © 2019 SeniorDesign. All rights reserved.
 //
 
+import Firebase
 import UIKit
 
 class TourViewController: UIViewController {
 
+    var accessCode: String = ""
+    var docCreate: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -20,24 +23,16 @@ class TourViewController: UIViewController {
   var appCoordinator: MainCoordinator!
 
     
-    @IBAction func StartButton(_ sender: Any) {
-        window = UIWindow(frame: UIScreen.main.bounds)
-//
-        if let window = window {
-              appCoordinator = MainCoordinator(window: window)
-        }
-        //user join group
-        //program segue to AR
+    @IBAction func PushStart(_ sender: Any) {
+        self.performSegue(withIdentifier: "AugReal", sender: self)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "QuestionSegue") {
+            let vc = segue.destination as! QuestionsViewController // Get the view controller
+            vc.codigo = self.accessCode // Pass the selected objects to the view controller
+            vc.identi = self.docCreate
+        }
     }
-    */
 
 }

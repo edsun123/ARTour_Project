@@ -11,14 +11,14 @@ import UIKit
 class WelcomeViewController2: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func RequestAccess(_ sender: Any) {
+    @IBAction func tapAction(_ sender: Any) {
         
-        //Request access to location, bluetooth, and camera
+        self.performSegue(withIdentifier: "MainSegue", sender: self)
     }
     
     /*
