@@ -38,24 +38,25 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet private var sceneView: ARSCNView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mapView.delegate = self
+//        mapView.delegate = self
         setupScene()
         setupLocationService()
         setupNavigation()
+
     }
 }
 
 extension ViewController: Controller {
     
-    @IBAction func resetButtonTapped(_ sender: Any) {
-        delegate?.reset()
-    }
+//    @IBAction func resetButtonTapped(_ sender: Any) {
+//        delegate?.reset()
+//    }
     
     private func setupLocationService() {
         locationService = LocationService()
@@ -80,29 +81,61 @@ extension ViewController: Controller {
         let scene = SCNScene()
         sceneView.scene = scene
         navigationController?.setNavigationBarHidden(true, animated: false)
+ 
         runSession()
     }
 }
 
 extension ViewController: MessagePresenting {
     
-    // Set session configuration with compass and gravity 
+    // Set session configuration with compass and gravity
     
+//    @IBAction func resetButtonTapped(_ sender: Any) {
+//    //        delegate?.reset()
+//                updateNodes = true
+//                if updatedLocations.count > 0 {
+//                    startingLocation = CLLocation.bestLocationEstimate(locations: updatedLocations)
+//                    //&& mapView.annotations.count == 0
+//                    if (startingLocation != nil ) && done == true {
+//                        DispatchQueue.main.async {
+//        //                    self.centerMapInInitialCoordinates()
+//        //                    self.showPointsOfInterestInMap(currentLegs: self.currentLegs)
+//        //                    self.addAnnotations()
+//                            self.addAnchors(steps: self.steps)
+//                        }
+//                    }
+//                }
+//        }
+//
     func runSession() {
+
         configuration.worldAlignment = .gravityAndHeading
+        
         sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+        
+//               updateNodes = true
+//                if updatedLocations.count > 0 {
+//                    startingLocation = CLLocation.bestLocationEstimate(locations: updatedLocations)
+//                    //&& mapView.annotations.count == 0
+//                    if (startingLocation != nil ) && done == true {
+//                        DispatchQueue.main.async {
+//        //                    self.centerMapInInitialCoordinates()
+//        //                    self.showPointsOfInterestInMap(currentLegs: self.currentLegs)
+//        //                    self.addAnnotations()
+//                            self.addAnchors(steps: self.steps)
+//                        }
+//                    }
+//                }
     }
     
-    // Render nodes when user touches screen
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    func showNodes(){
         updateNodes = true
         if updatedLocations.count > 0 {
             startingLocation = CLLocation.bestLocationEstimate(locations: updatedLocations)
-            if (startingLocation != nil && mapView.annotations.count == 0) && done == true {
+            if (startingLocation != nil /*&& mapView.annotations.count == 0*/) && done == true {
                 DispatchQueue.main.async {
-                    self.centerMapInInitialCoordinates()
-                    self.showPointsOfInterestInMap(currentLegs: self.currentLegs)
+                    //self.centerMapInInitialCoordinates()
+                    //self.showPointsOfInterestInMap(currentLegs: self.currentLegs)
                     self.addAnnotations()
                     self.addAnchors(steps: self.steps)
                 }
@@ -110,16 +143,34 @@ extension ViewController: MessagePresenting {
         }
     }
     
-    private func showPointsOfInterestInMap(currentLegs: [[CLLocationCoordinate2D]]) {
-        for leg in currentLegs {
-            for item in leg {
-                let poi = POIAnnotation(coordinate: item, name: String(describing:item))
-                self.annotations.append(poi)
-                self.mapView.addAnnotation(poi)
-            }
-        }
-    }
+    // Render nodes when user touches screen
     
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        updateNodes = true
+//        if updatedLocations.count > 0 {
+//            startingLocation = CLLocation.bestLocationEstimate(locations: updatedLocations)
+//            //&& mapView.annotations.count == 0
+//            if (startingLocation != nil ) && done == true {
+//                DispatchQueue.main.async {
+////                    self.centerMapInInitialCoordinates()
+////                    self.showPointsOfInterestInMap(currentLegs: self.currentLegs)
+////                    self.addAnnotations()
+//                    self.addAnchors(steps: self.steps)
+//                }
+//            }
+//        }
+//    }
+    
+//    private func showPointsOfInterestInMap(currentLegs: [[CLLocationCoordinate2D]]) {
+//        for leg in currentLegs {
+//            for item in leg {
+//                let poi = POIAnnotation(coordinate: item, name: String(describing:item))
+//                self.annotations.append(poi)
+//                self.mapView.addAnnotation(poi)
+//            }
+//        }
+//    }
+
     private func addAnnotations() {
         annotations.forEach { annotation in
             guard let map = mapView else { return }
@@ -134,7 +185,7 @@ extension ViewController: MessagePresenting {
             }
         }
     }
-    
+//
     private func updateNodePosition() {
         if updateNodes {
             locationUpdates += 1
@@ -160,13 +211,13 @@ extension ViewController: MessagePresenting {
     
     // For navigation route step add sphere node
     
-    private func addSphere(for step: MKRouteStep) {
+    private func addSphere(for step: MKRoute.Step) {
         let stepLocation = step.getLocation()
         let locationTransform = MatrixHelper.transformMatrix(for: matrix_identity_float4x4, originLocation: startingLocation, location: stepLocation)
         let stepAnchor = ARAnchor(transform: locationTransform)
         let sphere = BaseNode(title: step.instructions, location: stepLocation)
         anchors.append(stepAnchor)
-        sphere.addNode(with: 0.3, and: .green, and: step.instructions)
+        sphere.addNode(with: 0.2, and: .green, and: step.instructions)
         sphere.location = stepLocation
         sphere.anchor = stepAnchor
         sceneView.session.add(anchor: stepAnchor)
@@ -180,7 +231,7 @@ extension ViewController: MessagePresenting {
         let locationTransform = MatrixHelper.transformMatrix(for: matrix_identity_float4x4, originLocation: startingLocation, location: location)
         let stepAnchor = ARAnchor(transform: locationTransform)
         let sphere = BaseNode(title: "Title", location: location)
-        sphere.addSphere(with: 0.25, and: .blue)
+        sphere.addSphere(with: 0.2, and: .blue)
         anchors.append(stepAnchor)
         sphere.location = location
         sceneView.session.add(anchor: stepAnchor)
@@ -215,10 +266,10 @@ extension ViewController: ARSCNViewDelegate {
 }
 
 extension ViewController: LocationServiceDelegate {
-    
     func trackingLocation(for currentLocation: CLLocation) {
         if currentLocation.horizontalAccuracy <= 65.0 {
             updatedLocations.append(currentLocation)
+            showNodes()
             updateNodePosition()
         }
     }
@@ -230,35 +281,36 @@ extension ViewController: LocationServiceDelegate {
 
 extension ViewController: MKMapViewDelegate {
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "annotationView") ?? MKAnnotationView()
-        annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-        annotationView.canShowCallout = true
-        return annotationView
-        
-    }
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "annotationView") ?? MKAnnotationView()
+//        annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+//        annotationView.canShowCallout = true
+//        return annotationView
+//
+//    }
     
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        if overlay is MKCircle {
-            let renderer = MKCircleRenderer(overlay: overlay)
-            renderer.fillColor = UIColor.black.withAlphaComponent(0.1)
-            renderer.strokeColor = annotationColor
-            renderer.lineWidth = 2
-            return renderer
-        }
-        return MKOverlayRenderer()
-    }
+//    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+//        if overlay is MKCircle {
+//            let renderer = MKCircleRenderer(overlay: overlay)
+//            renderer.fillColor = UIColor.black.withAlphaComponent(0.1)
+//            renderer.strokeColor = annotationColor
+//            renderer.lineWidth = 2
+//            return renderer
+//        }
+//        return MKOverlayRenderer()
+//    }
     
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        let alertController = UIAlertController(title: "Welcome to \(String(describing: title))", message: "You've selected \(String(describing: title))", preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-        alertController.addAction(cancelAction)
-        present(alertController, animated: true, completion: nil)
-    }    
+//    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+//        let alertController = UIAlertController(title: "Welcome to \(String(describing: title))", message: "You've selected \(String(describing: title))", preferredStyle: .alert)
+//        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//        alertController.addAction(cancelAction)
+//        present(alertController, animated: true, completion: nil)
+//    }
 }
+//
 
-extension ViewController:  Mapable {
-    
+extension ViewController:  Mapable{
+
     private func addAnchors(steps: [MKRouteStep]) {
         guard startingLocation != nil && steps.count > 0 else { return }
         for step in steps { addSphere(for: step) }

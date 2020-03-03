@@ -61,7 +61,7 @@ extension MainCoordinator: ControllerCoordinatorDelegate {
             
             let startCoordinator = StartControllerCoordinator(window: window)
             addChildCoordinator(startCoordinator)
-            startCoordinator.delegate = self 
+            startCoordinator.delegate = self
             startCoordinator.type = .start
             startCoordinator.start()
         }

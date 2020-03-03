@@ -22,47 +22,69 @@ final class StartViewController: UIViewController, Controller {
     var type: ControllerType = .nav
     private var locations: [CLLocation] = []
     var startingLocation: CLLocation!
-    var press: UILongPressGestureRecognizer!
+//    var press: UILongPressGestureRecognizer!
     private var steps: [MKRouteStep] = []
     var destinationLocation: CLLocationCoordinate2D! {
         didSet {
             setupNavigation()
         }
     }
+    var window: UIWindow?
+    var appCoordinator: MainCoordinator!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("ViewDidLoad")
         if ARConfiguration.isSupported {
             locationService.delegate = self
             guard let locationManager = locationService.locationManager else { return }
             locationService.startUpdatingLocation(locationManager: locationManager)
-            press = UILongPressGestureRecognizer(target: self, action: #selector(handleMapTap(gesture:)))
-            press.minimumPressDuration = 0.35
-            mapView.addGestureRecognizer(press)
+//            press = UILongPressGestureRecognizer(target: self, action: #selector(handleMapTap(gesture:)))
+//            press.minimumPressDuration = 0.35
+//            mapView.addGestureRecognizer(press)
+            self.handleMapTap()
+//
             mapView.delegate = self
         } else {
             presentMessage(title: "Not Compatible", message: "ARKit is not compatible with this phone.")
             return
         }
+        
+
     }
-    
+//    @objc
+    //gesture: UIGestureRecognizer
     // Sets destination location to point on map
-    @objc func handleMapTap(gesture: UIGestureRecognizer) {
-        if gesture.state != UIGestureRecognizerState.began {
-            return
-        }
+    func handleMapTap() {
+        print("Set tap destination")
+//
+//        if gesture.state != UIGestureRecognizerState.began {
+//            return
+//        }
         // Get tap point on map
-        let touchPoint = gesture.location(in: mapView)
+//        let touchPoint = gesture.location(in: mapView)
         
         // Convert map tap point to coordinate
-        let coord: CLLocationCoordinate2D = mapView.convert(touchPoint, toCoordinateFrom: mapView)
+//        let coord: CLLocationCoordinate2D = mapView.convert(touchPoint, toCoordinateFrom: mapView)
+//
+        let latitude = 42.349345
+        let longitude = -71.105932
+        let destination = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        destinationLocation = destination
         
-        destinationLocation = coord
     }
+    
+    //        window = UIWindow(frame: UIScreen.main.bounds)
+    //
+    //        if let window = window {
+    //            appCoordinator = MainCoordinator(window: window)
+    //        }
     
     // Gets directions from from MapKit directions API, when finished calculates intermediary locations
     
     private func setupNavigation() {
-        
+        print("Setup navigation")
+
         let group = DispatchGroup()
         group.enter()
         
@@ -86,7 +108,8 @@ final class StartViewController: UIViewController, Controller {
     }
     
     private func getLocationData() {
-        
+        print("get navigation data")
+
         for (index, step) in steps.enumerated() {
             setTripLegFromStep(step, and: index)
         }
@@ -95,12 +118,12 @@ final class StartViewController: UIViewController, Controller {
             update(intermediary: leg)
         }
         
-        centerMapInInitialCoordinates()
+//        centerMapInInitialCoordinates()
         showPointsOfInterestInMap(currentTripLegs: currentTripLegs)
         addMapAnnotations()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            let alertController = UIAlertController(title: "Navigate to your destination?", message: "You've selected destination.", preferredStyle: .alert)
+           /* let alertController = UIAlertController(title: "Navigate to your destination?", message: "You've selected destination.", preferredStyle: .alert)
             
             let cancelAction = UIAlertAction(title: "No thanks.", style: .cancel, handler: { action in
                 DispatchQueue.main.async {
@@ -117,11 +140,12 @@ final class StartViewController: UIViewController, Controller {
             let okayAction = UIAlertAction(title: "Go!", style: .default, handler: { action in
                 let destination = CLLocation(latitude: self.destinationLocation.latitude, longitude: self.destinationLocation.longitude)
                 self.delegate?.startNavigation(with: self.annotations, for: destination, and: self.currentTripLegs, and: self.steps)
-            })
-            
-            alertController.addAction(cancelAction)
-            alertController.addAction(okayAction)
-            self.present(alertController, animated: true, completion: nil)
+            })*/
+            let destination = CLLocation(latitude: self.destinationLocation.latitude, longitude: self.destinationLocation.longitude)
+            self.delegate?.startNavigation(with: self.annotations, for: destination, and: self.currentTripLegs, and: self.steps)
+//            alertController.addAction(cancelAction)
+//            alertController.addAction(okayAction)
+//            self.present(alertController, animated: true, completion: nil)
         }
         
     }
@@ -133,6 +157,8 @@ final class StartViewController: UIViewController, Controller {
     
     // Add POI dots to map
     private func showPointsOfInterestInMap(currentTripLegs: [[CLLocationCoordinate2D]]) {
+        print("show dots")
+
         mapView.removeAnnotations(mapView.annotations)
         for tripLeg in currentTripLegs {
             for coordinate in tripLeg {
@@ -144,6 +170,8 @@ final class StartViewController: UIViewController, Controller {
     
     // Adds calculated distances to annotations and locations arrays
     private func update(intermediary locations: [CLLocationCoordinate2D]) {
+        print("updating")
+
         for intermediaryLocation in locations {
             annotations.append(POIAnnotation(coordinate: intermediaryLocation, name: String(describing:intermediaryLocation)))
             self.locations.append(CLLocation(latitude: intermediaryLocation.latitude, longitude: intermediaryLocation.longitude))
