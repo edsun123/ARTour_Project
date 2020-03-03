@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key></key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -31,12 +33,20 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>App needs access to bluetooth for indoor naviagtion</string>
 	<key>NSCameraUsageDescription</key>
+<<<<<<< HEAD
 	<string>This application will use the camera for augmented reality</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Location needed for navigation</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location needed for navigation</string>
+=======
+	<string>App needs access to camera for AR experience</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App needs access to location for outdoor navigation</string>
+>>>>>>> 865495b6f037acd5162ced91a9c76012429cb016
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -47,7 +57,9 @@
 		<string>arkit</string>
 	</array>
 	<key>UIStatusBarHidden</key>
-	<true/>
+	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDarkContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -61,5 +73,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

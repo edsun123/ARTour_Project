@@ -6,8 +6,8 @@
 //  Copyright © 2019 SeniorDesign. All rights reserved.
 //
 
-import UIKit
 import Firebase
+import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //firebase and firestore setup
         FirebaseApp.configure()
         let db = Firestore.firestore()
-        print(db)
+        print("db = \(db)")
         
         return true
     }
@@ -48,6 +48,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
-
 }
-

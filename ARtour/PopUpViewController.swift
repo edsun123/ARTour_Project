@@ -6,88 +6,78 @@
 //  Copyright © 2020 SeniorDesign. All rights reserved.
 //
 
-import UIKit
 import Firebase
+import UIKit
 
-class PopUpViewController: UIViewController {
+class PopUpViewController: UIViewController, UITextFieldDelegate {
 
     var db: Firestore!
     @IBOutlet weak var TextField: UITextField!
-    var access = ""
-    var exs = 1
-    
+    var access: String = ""
+    var docID: String = ""
+    var num: Int = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        
+
         //firestore setup
         let settings = FirestoreSettings()
         Firestore.firestore().settings = settings
         db = Firestore.firestore()
+        
+        TextField.delegate = self //manage the keyboard
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     @IBAction func AccessCode(_ sender: Any) { //when the user clicks continue
-        
+        TextField.resignFirstResponder()
         self.access = TextField.text!
-        print("access = \(access)")
         
-        verifyCode()
-        
-        if exs == 1 { //add user to the tour group in firestore
-            
-            let num = Int.random(in: 0..<25)
-            
-            var ref: DocumentReference? = nil
-            ref = db.collection("Tour").document(access).collection("Users").addDocument(data: [
-                "number": num
-            ]) { err in
-                if let err = err {
-                    print("Error adding document: \(err)")
+        if (self.access.isEmpty) {
+            let alert = UIAlertController(title: "Enter an Access Code", message: "You have not entered an access code, please enter one to continue", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in }
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            num = Int.random(in: 0..<100)
+            let docRef = db.collection("Tours").document("Engineering").collection("TourGroups").document(access)
+            docRef.getDocument { (document, error) in
+                if let document = document, document.exists {
+                    print("Found document")
+                    var ref: DocumentReference? = nil
+                    ref = self.db.collection("Tours").document("Engineering").collection("TourGroups").document(self.access).collection("Users").addDocument(data: ["number": self.num]) { err in
+                        if let err = err {
+                            print("Error adding document: \(err)")
+                        } else {
+                            print("Document added with ID: \(ref!.documentID)")
+                        }
+                    }
+                    self.TextField.text! = ""
+                    self.docID = ref!.documentID
+                    self.performSegue(withIdentifier: "TourSegue", sender: self)
                 } else {
-                    print("Document added with ID: \(ref!.documentID)")
+                    print("Could not find document")
+                    let alert = UIAlertController(title: "Invalid Access Code", message: "You have entered an invalid access code, please try again", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in }
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
+                    self.TextField.text! = ""
                 }
             }
-            
-        } else { //trigger alert letting user know they entered a bad access code
-
-            print("Error tour group does not exists")
-            
-            let alert = UIAlertController(title: "Invalid Access Code", message: "You have entered an invalid access code. Please try again", preferredStyle: .alert)
-            
-            let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
-                self.TextField.text = ""
-            }
-            alert.addAction(action)
-            
-            self.present(alert, animated: true, completion: nil)
         }
     }
-    
-    func verifyCode() { //function to verify the user input access code
-
-        let docRef = db.collection("Tour").document(access)
         
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                print("Document exists")
-            } else {
-                self.exs = 0
-                print("Error document does not exist")
-            }
-        }
-        
-        print("exs = \(self.exs)")
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "TourSegue") {
+            let vc = segue.destination as! TourViewController // Get the view controller
+            vc.accessCode = self.access // Pass the selected objects to the view controller
+            vc.docCreate = self.docID
+        }
     }
-    */
 
 }
