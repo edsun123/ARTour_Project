@@ -36,9 +36,17 @@
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>App needs access to bluetooth for indoor naviagtion</string>
 	<key>NSCameraUsageDescription</key>
+<<<<<<< HEAD
 	<string>App needs access to camera for AR experience</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>App needs access to location for outdoor navigation</string>
+=======
+	<string>This application will use the camera for augmented reality</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location needed for navigation</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location needed for navigation</string>
+>>>>>>> origin/master+branch2
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72B673AB23DE851A00EDB1EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B673AA23DE851A00EDB1EF /* AppDelegate.swift */; };
+		72B673AD23DE851A00EDB1EF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 72B673AC23DE851A00EDB1EF /* art.scnassets */; };
+		72B673B223DE851A00EDB1EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B673B023DE851A00EDB1EF /* Main.storyboard */; };
+		72B673B423DE851B00EDB1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72B673B323DE851B00EDB1EF /* Assets.xcassets */; };
+		72B673B723DE851B00EDB1EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B673B523DE851B00EDB1EF /* LaunchScreen.storyboard */; };
+		72B673C223DE851B00EDB1EF /* HeadsetViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B673C123DE851B00EDB1EF /* HeadsetViewTests.swift */; };
+		72B673CD23DE851B00EDB1EF /* HeadsetViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B673CC23DE851B00EDB1EF /* HeadsetViewUITests.swift */; };
+		72B673DB23DE85C500EDB1EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B673DA23DE85C500EDB1EF /* ViewController.swift */; };
+		72B673DD23DE85D400EDB1EF /* PlaneVisualizerHelperClass_v3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B673DC23DE85D300EDB1EF /* PlaneVisualizerHelperClass_v3.swift */; };
+		72B673DF23DE85DC00EDB1EF /* ARSCNStereoViewClass_v4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B673DE23DE85DC00EDB1EF /* ARSCNStereoViewClass_v4.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72B673BE23DE851B00EDB1EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72B6739F23DE851A00EDB1EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72B673A623DE851A00EDB1EF;
+			remoteInfo = HeadsetView;
+		};
+		72B673C923DE851B00EDB1EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72B6739F23DE851A00EDB1EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72B673A623DE851A00EDB1EF;
+			remoteInfo = HeadsetView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72B673A723DE851A00EDB1EF /* HeadsetView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadsetView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B673AA23DE851A00EDB1EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72B673AC23DE851A00EDB1EF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		72B673B123DE851A00EDB1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72B673B323DE851B00EDB1EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72B673B623DE851B00EDB1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72B673B823DE851B00EDB1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B673BD23DE851B00EDB1EF /* HeadsetViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadsetViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B673C123DE851B00EDB1EF /* HeadsetViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsetViewTests.swift; sourceTree = "<group>"; };
+		72B673C323DE851B00EDB1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B673C823DE851B00EDB1EF /* HeadsetViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadsetViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B673CC23DE851B00EDB1EF /* HeadsetViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsetViewUITests.swift; sourceTree = "<group>"; };
+		72B673CE23DE851B00EDB1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B673DA23DE85C500EDB1EF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../iOS-ARKit-Headset-View/ARKitHeadsetView/ViewController.swift"; sourceTree = "<group>"; };
+		72B673DC23DE85D300EDB1EF /* PlaneVisualizerHelperClass_v3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaneVisualizerHelperClass_v3.swift; path = "../../iOS-ARKit-Headset-View/ARKitHeadsetView/PlaneVisualizerHelperClass_v3.swift"; sourceTree = "<group>"; };
+		72B673DE23DE85DC00EDB1EF /* ARSCNStereoViewClass_v4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSCNStereoViewClass_v4.swift; path = "../../iOS-ARKit-Headset-View/ARKitHeadsetView/ARSCNStereoViewClass_v4.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72B673A423DE851A00EDB1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B673BA23DE851B00EDB1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B673C523DE851B00EDB1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72B6739E23DE851A00EDB1EF = {
+			isa = PBXGroup;
+			children = (
+				72B673A923DE851A00EDB1EF /* HeadsetView */,
+				72B673C023DE851B00EDB1EF /* HeadsetViewTests */,
+				72B673CB23DE851B00EDB1EF /* HeadsetViewUITests */,
+				72B673A823DE851A00EDB1EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72B673A823DE851A00EDB1EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72B673A723DE851A00EDB1EF /* HeadsetView.app */,
+				72B673BD23DE851B00EDB1EF /* HeadsetViewTests.xctest */,
+				72B673C823DE851B00EDB1EF /* HeadsetViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72B673A923DE851A00EDB1EF /* HeadsetView */ = {
+			isa = PBXGroup;
+			children = (
+				72B673AA23DE851A00EDB1EF /* AppDelegate.swift */,
+				72B673DA23DE85C500EDB1EF /* ViewController.swift */,
+				72B673DE23DE85DC00EDB1EF /* ARSCNStereoViewClass_v4.swift */,
+				72B673DC23DE85D300EDB1EF /* PlaneVisualizerHelperClass_v3.swift */,
+				72B673AC23DE851A00EDB1EF /* art.scnassets */,
+				72B673B023DE851A00EDB1EF /* Main.storyboard */,
+				72B673B323DE851B00EDB1EF /* Assets.xcassets */,
+				72B673B523DE851B00EDB1EF /* LaunchScreen.storyboard */,
+				72B673B823DE851B00EDB1EF /* Info.plist */,
+			);
+			path = HeadsetView;
+			sourceTree = "<group>";
+		};
+		72B673C023DE851B00EDB1EF /* HeadsetViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				72B673C123DE851B00EDB1EF /* HeadsetViewTests.swift */,
+				72B673C323DE851B00EDB1EF /* Info.plist */,
+			);
+			path = HeadsetViewTests;
+			sourceTree = "<group>";
+		};
+		72B673CB23DE851B00EDB1EF /* HeadsetViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				72B673CC23DE851B00EDB1EF /* HeadsetViewUITests.swift */,
+				72B673CE23DE851B00EDB1EF /* Info.plist */,
+			);
+			path = HeadsetViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72B673A623DE851A00EDB1EF /* HeadsetView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72B673D123DE851B00EDB1EF /* Build configuration list for PBXNativeTarget "HeadsetView" */;
+			buildPhases = (
+				72B673A323DE851A00EDB1EF /* Sources */,
+				72B673A423DE851A00EDB1EF /* Frameworks */,
+				72B673A523DE851A00EDB1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeadsetView;
+			productName = HeadsetView;
+			productReference = 72B673A723DE851A00EDB1EF /* HeadsetView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72B673BC23DE851B00EDB1EF /* HeadsetViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72B673D423DE851B00EDB1EF /* Build configuration list for PBXNativeTarget "HeadsetViewTests" */;
+			buildPhases = (
+				72B673B923DE851B00EDB1EF /* Sources */,
+				72B673BA23DE851B00EDB1EF /* Frameworks */,
+				72B673BB23DE851B00EDB1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72B673BF23DE851B00EDB1EF /* PBXTargetDependency */,
+			);
+			name = HeadsetViewTests;
+			productName = HeadsetViewTests;
+			productReference = 72B673BD23DE851B00EDB1EF /* HeadsetViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		72B673C723DE851B00EDB1EF /* HeadsetViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72B673D723DE851B00EDB1EF /* Build configuration list for PBXNativeTarget "HeadsetViewUITests" */;
+			buildPhases = (
+				72B673C423DE851B00EDB1EF /* Sources */,
+				72B673C523DE851B00EDB1EF /* Frameworks */,
+				72B673C623DE851B00EDB1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72B673CA23DE851B00EDB1EF /* PBXTargetDependency */,
+			);
+			name = HeadsetViewUITests;
+			productName = HeadsetViewUITests;
+			productReference = 72B673C823DE851B00EDB1EF /* HeadsetViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72B6739F23DE851A00EDB1EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Edwin;
+				TargetAttributes = {
+					72B673A623DE851A00EDB1EF = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					72B673BC23DE851B00EDB1EF = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 72B673A623DE851A00EDB1EF;
+					};
+					72B673C723DE851B00EDB1EF = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 72B673A623DE851A00EDB1EF;
+					};
+				};
+			};
+			buildConfigurationList = 72B673A223DE851A00EDB1EF /* Build configuration list for PBXProject "HeadsetView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72B6739E23DE851A00EDB1EF;
+			productRefGroup = 72B673A823DE851A00EDB1EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72B673A623DE851A00EDB1EF /* HeadsetView */,
+				72B673BC23DE851B00EDB1EF /* HeadsetViewTests */,
+				72B673C723DE851B00EDB1EF /* HeadsetViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72B673A523DE851A00EDB1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B673AD23DE851A00EDB1EF /* art.scnassets in Resources */,
+				72B673B723DE851B00EDB1EF /* LaunchScreen.storyboard in Resources */,
+				72B673B423DE851B00EDB1EF /* Assets.xcassets in Resources */,
+				72B673B223DE851A00EDB1EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B673BB23DE851B00EDB1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B673C623DE851B00EDB1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72B673A323DE851A00EDB1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B673DB23DE85C500EDB1EF /* ViewController.swift in Sources */,
+				72B673DD23DE85D400EDB1EF /* PlaneVisualizerHelperClass_v3.swift in Sources */,
+				72B673AB23DE851A00EDB1EF /* AppDelegate.swift in Sources */,
+				72B673DF23DE85DC00EDB1EF /* ARSCNStereoViewClass_v4.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B673B923DE851B00EDB1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B673C223DE851B00EDB1EF /* HeadsetViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B673C423DE851B00EDB1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B673CD23DE851B00EDB1EF /* HeadsetViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72B673BF23DE851B00EDB1EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72B673A623DE851A00EDB1EF /* HeadsetView */;
+			targetProxy = 72B673BE23DE851B00EDB1EF /* PBXContainerItemProxy */;
+		};
+		72B673CA23DE851B00EDB1EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72B673A623DE851A00EDB1EF /* HeadsetView */;
+			targetProxy = 72B673C923DE851B00EDB1EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72B673B023DE851A00EDB1EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72B673B123DE851A00EDB1EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72B673B523DE851B00EDB1EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72B673B623DE851B00EDB1EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72B673CF23DE851B00EDB1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72B673D023DE851B00EDB1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72B673D223DE851B00EDB1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C6XS2UW58;
+				INFOPLIST_FILE = HeadsetView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sun.HeadsetView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72B673D323DE851B00EDB1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C6XS2UW58;
+				INFOPLIST_FILE = HeadsetView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sun.HeadsetView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72B673D523DE851B00EDB1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C6XS2UW58;
+				INFOPLIST_FILE = HeadsetViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sun.HeadsetViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeadsetView.app/HeadsetView";
+			};
+			name = Debug;
+		};
+		72B673D623DE851B00EDB1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C6XS2UW58;
+				INFOPLIST_FILE = HeadsetViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sun.HeadsetViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeadsetView.app/HeadsetView";
+			};
+			name = Release;
+		};
+		72B673D823DE851B00EDB1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C6XS2UW58;
+				INFOPLIST_FILE = HeadsetViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sun.HeadsetViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeadsetView;
+			};
+			name = Debug;
+		};
+		72B673D923DE851B00EDB1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C6XS2UW58;
+				INFOPLIST_FILE = HeadsetViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sun.HeadsetViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeadsetView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72B673A223DE851A00EDB1EF /* Build configuration list for PBXProject "HeadsetView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B673CF23DE851B00EDB1EF /* Debug */,
+				72B673D023DE851B00EDB1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72B673D123DE851B00EDB1EF /* Build configuration list for PBXNativeTarget "HeadsetView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B673D223DE851B00EDB1EF /* Debug */,
+				72B673D323DE851B00EDB1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72B673D423DE851B00EDB1EF /* Build configuration list for PBXNativeTarget "HeadsetViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B673D523DE851B00EDB1EF /* Debug */,
+				72B673D623DE851B00EDB1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72B673D723DE851B00EDB1EF /* Build configuration list for PBXNativeTarget "HeadsetViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B673D823DE851B00EDB1EF /* Debug */,
+				72B673D923DE851B00EDB1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72B6739F23DE851A00EDB1EF /* Project object */;
+}

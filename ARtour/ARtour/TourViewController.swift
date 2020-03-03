@@ -18,9 +18,24 @@ class TourViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+
+  var window: UIWindow?
+  var appCoordinator: MainCoordinator!
+
     
+<<<<<<< HEAD
     @IBAction func PushStart(_ sender: Any) {
         self.performSegue(withIdentifier: "AugReal", sender: self)
+=======
+    @IBAction func StartButton(_ sender: Any) {
+        window = UIWindow(frame: UIScreen.main.bounds)
+//
+        if let window = window {
+              appCoordinator = MainCoordinator(window: window)
+        }
+        //user join group
+        //program segue to AR
+>>>>>>> origin/master+branch2
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
