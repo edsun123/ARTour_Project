@@ -20,18 +20,37 @@
 		4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D368C2373B4D7001F5A36 /* TourViewController.swift */; };
 		4E43B1AE240EDC370011B25A /* BeaconDistanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43B1AD240EDC370011B25A /* BeaconDistanceTableViewController.swift */; };
 		4E47805023EB4FDB00D43FAF /* arrow.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4E47804F23EB4FDB00D43FAF /* arrow.dae */; };
+		4E76A11B241040310081FD4F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6545B23FF52580077064B /* MainCoordinator.swift */; };
+		4E76A123241040960081FD4F /* MatrixHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546D23FF53850077064B /* MatrixHelper.swift */; };
+		4E76A126241040A10081FD4F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546E23FF53850077064B /* LocationService.swift */; };
+		4E76A12D241040B00081FD4F /* ApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546A23FF53850077064B /* ApplicationService.swift */; };
+		4E76A134241041680081FD4F /* StartControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6545A23FF52580077064B /* StartControllerCoordinator.swift */; };
+		4E76A1352410416B0081FD4F /* NavigationControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6545C23FF52580077064B /* NavigationControllerCoordinator.swift */; };
+		4E76A136241041730081FD4F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546123FF52580077064B /* StartViewController.swift */; };
+		4E76A137241041780081FD4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6545F23FF52580077064B /* ViewController.swift */; };
+		4E76A1382410417C0081FD4F /* NavigationViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546023FF52580077064B /* NavigationViewControllerDelegate.swift */; };
+		4E76A139241041A20081FD4F /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540F23FF4F5B0077064B /* StoryboardIdentifiable.swift */; };
+		4E76A13A241041A50081FD4F /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6541023FF4F5B0077064B /* Controller.swift */; };
+		4E76A13B241041AA0081FD4F /* ControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540B23FF4F5B0077064B /* ControllerCoordinator.swift */; };
+		4E76A13C241041AE0081FD4F /* ControllerCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540C23FF4F5B0077064B /* ControllerCoordinatorDelegate.swift */; };
+		4E76A13D241041B10081FD4F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540E23FF4F5B0077064B /* Coordinator.swift */; };
+		4E76A13E241041B50081FD4F /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540D23FF4F5B0077064B /* CoordinatorDelegate.swift */; };
+		4E76A13F241041B90081FD4F /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540923FF4F5B0077064B /* CoordinatorType.swift */; };
+		4E76A140241041BC0081FD4F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540A23FF4F5B0077064B /* AppCoordinator.swift */; };
+		4E76A141241041C00081FD4F /* Mapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6541223FF4F5B0077064B /* Mapable.swift */; };
+		4E76A142241041C50081FD4F /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6544423FF522F0077064B /* BaseNode.swift */; };
+		4E76A143241041CE0081FD4F /* LocationTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6544723FF522F0077064B /* LocationTranslation.swift */; };
+		4E76A144241041D60081FD4F /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B323FF4EDC0077064B /* CLLocation+Extension.swift */; };
+		4E76A145241041F30081FD4F /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B223FF4EDC0077064B /* CLLocationCoordinate2D+Extension.swift */; };
+		4E76A146241041F70081FD4F /* MKRouteStep+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B823FF4EDC0077064B /* MKRouteStep+Extension.swift */; };
+		4E76A147241041FB0081FD4F /* SCNVector3+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B523FF4EDC0077064B /* SCNVector3+Extension.swift */; };
+		4E76A148241041FE0081FD4F /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B723FF4EDC0077064B /* UIStoryboard+Extension.swift */; };
+		4E76A149241042050081FD4F /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B623FF4EDC0077064B /* Double+Extension.swift */; };
 		4E86320E23D2938A00D87E5F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */; };
-		4E86320F23D2938A00D87E5F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */; };
-		4E86321023D2938A00D87E5F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */; };
 		4E86321223D29C4000D87E5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86321123D29C4000D87E5F /* WelcomeViewController.swift */; };
-		4E86321323D29C4000D87E5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86321123D29C4000D87E5F /* WelcomeViewController.swift */; };
-		4E86321423D29C4000D87E5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86321123D29C4000D87E5F /* WelcomeViewController.swift */; };
 		4E943B952405B53B00E251D3 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E943B942405B53B00E251D3 /* EmailViewController.swift */; };
 		4EB903E423CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
-		4EB903E523CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
-		4EB903E623CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
 		72A653B923FF4EDD0077064B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B123FF4EDC0077064B /* Constants.swift */; };
-		72A653BA23FF4EDD0077064B /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B223FF4EDC0077064B /* CLLocationCoordinate2D+Extension.swift */; };
 		72A653BC23FF4EDD0077064B /* StoryboardIdentifiableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B423FF4EDC0077064B /* StoryboardIdentifiableError.swift */; };
 		72A6540523FF4F360077064B /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A6540223FF4F360077064B /* Start.storyboard */; };
 		72A6540623FF4F360077064B /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A6540323FF4F360077064B /* Navigation.storyboard */; };
@@ -84,7 +103,7 @@
 		4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		4E86321123D29C4000D87E5F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4E943B942405B53B00E251D3 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
-		4EB903E323CED6C300589315 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = SOURCE_ROOT; };
+		4EB903E323CED6C300589315 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopUpViewController.swift; path = ARtour/Screens/Controllers/PopUpViewController.swift; sourceTree = SOURCE_ROOT; };
 		53E5609261D5BBEA800FD2B1 /* Pods-ARtourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.debug.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A2C28316DBB3D23BFB58104 /* Pods-ARtourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.release.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.release.xcconfig"; sourceTree = "<group>"; };
 		72A653B123FF4EDC0077064B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -124,7 +143,7 @@
 		72A6546D23FF53850077064B /* MatrixHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixHelper.swift; sourceTree = "<group>"; };
 		72A6546E23FF53850077064B /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		72A6546F23FF53850077064B /* NavigationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
-		72E45AC823F3437C0013FC00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		72E45AC823F3437C0013FC00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7C749016CB509AECE92FB39B /* Pods_ARtourUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtourUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C03FB7721291A386CB104AA /* Pods_ARtour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D138DAE3D44C015A581331F /* Pods-ARtour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtour.release.xcconfig"; path = "Target Support Files/Pods-ARtour/Pods-ARtour.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,7 +190,6 @@
 				4E3D36582373AF7B001F5A36 /* Products */,
 				D8B1DBC5AF94057FC7356534 /* Pods */,
 				68AEA33866C6833F8E367B5A /* Frameworks */,
-				4E76A114241035700081FD4F /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,26 +206,17 @@
 		4E3D36592373AF7B001F5A36 /* ARtour */ = {
 			isa = PBXGroup;
 			children = (
+				4E3D36682373AF7E001F5A36 /* Info.plist */,
+				72E45AC823F3437C0013FC00 /* GoogleService-Info.plist */,
+				4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */,
+				4E76A11524103E020081FD4F /* New Group */,
 				72A6546923FF53850077064B /* Services */,
 				72A6545823FF52580077064B /* Screens */,
-				72A6544323FF522F0077064B /* Models */,
 				72A6540723FF4F5B0077064B /* Protocols */,
-				72A6540123FF4F360077064B /* Storyboards */,
+				72A6544323FF522F0077064B /* Models */,
 				72A653B023FF4EDC0077064B /* Extensions */,
-				4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */,
-				4E86321123D29C4000D87E5F /* WelcomeViewController.swift */,
-				4E3D368A2373B4BE001F5A36 /* MainViewController.swift */,
-				4EB903E323CED6C300589315 /* PopUpViewController.swift */,
-				4E3D368C2373B4D7001F5A36 /* TourViewController.swift */,
-				4E31815223FF38C500A11F70 /* BeaconViewController.swift */,
-				4E43B1AD240EDC370011B25A /* BeaconDistanceTableViewController.swift */,
-				4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */,
-				4E943B942405B53B00E251D3 /* EmailViewController.swift */,
-				4E3D36652373AF7E001F5A36 /* LaunchScreen.storyboard */,
-				4E3D36602373AF7B001F5A36 /* Main.storyboard */,
-				4E3D36632373AF7E001F5A36 /* Assets.xcassets */,
+				72A6540123FF4F360077064B /* Storyboards */,
 				4E47804F23EB4FDB00D43FAF /* arrow.dae */,
-				4E3D36682373AF7E001F5A36 /* Info.plist */,
 			);
 			path = ARtour;
 			sourceTree = "<group>";
@@ -230,12 +239,13 @@
 			path = ARtourUITests;
 			sourceTree = "<group>";
 		};
-		4E76A114241035700081FD4F /* Recovered References */ = {
+		4E76A11524103E020081FD4F /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				72E45AC823F3437C0013FC00 /* GoogleService-Info.plist */,
+				4E3D36632373AF7E001F5A36 /* Assets.xcassets */,
+				4E3D36652373AF7E001F5A36 /* LaunchScreen.storyboard */,
 			);
-			name = "Recovered References";
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		68AEA33866C6833F8E367B5A /* Frameworks */ = {
@@ -251,14 +261,14 @@
 		72A653B023FF4EDC0077064B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				72A653B323FF4EDC0077064B /* CLLocation+Extension.swift */,
 				72A653B123FF4EDC0077064B /* Constants.swift */,
 				72A653B223FF4EDC0077064B /* CLLocationCoordinate2D+Extension.swift */,
-				72A653B323FF4EDC0077064B /* CLLocation+Extension.swift */,
-				72A653B423FF4EDC0077064B /* StoryboardIdentifiableError.swift */,
-				72A653B523FF4EDC0077064B /* SCNVector3+Extension.swift */,
-				72A653B623FF4EDC0077064B /* Double+Extension.swift */,
-				72A653B723FF4EDC0077064B /* UIStoryboard+Extension.swift */,
 				72A653B823FF4EDC0077064B /* MKRouteStep+Extension.swift */,
+				72A653B523FF4EDC0077064B /* SCNVector3+Extension.swift */,
+				72A653B723FF4EDC0077064B /* UIStoryboard+Extension.swift */,
+				72A653B423FF4EDC0077064B /* StoryboardIdentifiableError.swift */,
+				72A653B623FF4EDC0077064B /* Double+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -266,6 +276,7 @@
 		72A6540123FF4F360077064B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				4E3D36602373AF7B001F5A36 /* Main.storyboard */,
 				72A6540223FF4F360077064B /* Start.storyboard */,
 				72A6540323FF4F360077064B /* Navigation.storyboard */,
 			);
@@ -275,12 +286,12 @@
 		72A6540723FF4F5B0077064B /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				72A6540823FF4F5B0077064B /* CoordinatorProtocols */,
+				72A6541123FF4F5B0077064B /* MessagePresenting.swift */,
 				72A6540F23FF4F5B0077064B /* StoryboardIdentifiable.swift */,
 				72A6541023FF4F5B0077064B /* Controller.swift */,
-				72A6541123FF4F5B0077064B /* MessagePresenting.swift */,
-				72A6541223FF4F5B0077064B /* Mapable.swift */,
 				72A6541323FF4F5B0077064B /* ControllerType.swift */,
+				72A6540823FF4F5B0077064B /* CoordinatorProtocols */,
+				72A6541223FF4F5B0077064B /* Mapable.swift */,
 			);
 			name = Protocols;
 			path = ../../ARKitNavigationDemo/ARKitNavigationDemo/ARKitNavigationDemo/Protocols;
@@ -289,12 +300,12 @@
 		72A6540823FF4F5B0077064B /* CoordinatorProtocols */ = {
 			isa = PBXGroup;
 			children = (
-				72A6540923FF4F5B0077064B /* CoordinatorType.swift */,
-				72A6540A23FF4F5B0077064B /* AppCoordinator.swift */,
 				72A6540B23FF4F5B0077064B /* ControllerCoordinator.swift */,
 				72A6540C23FF4F5B0077064B /* ControllerCoordinatorDelegate.swift */,
-				72A6540D23FF4F5B0077064B /* CoordinatorDelegate.swift */,
 				72A6540E23FF4F5B0077064B /* Coordinator.swift */,
+				72A6540D23FF4F5B0077064B /* CoordinatorDelegate.swift */,
+				72A6540923FF4F5B0077064B /* CoordinatorType.swift */,
+				72A6540A23FF4F5B0077064B /* AppCoordinator.swift */,
 			);
 			path = CoordinatorProtocols;
 			sourceTree = "<group>";
@@ -304,8 +315,8 @@
 			children = (
 				72A6544423FF522F0077064B /* BaseNode.swift */,
 				72A6544523FF522F0077064B /* POIAnnotation.swift */,
-				72A6544623FF522F0077064B /* LocationData.swift */,
 				72A6544723FF522F0077064B /* LocationTranslation.swift */,
+				72A6544623FF522F0077064B /* LocationData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,8 +333,8 @@
 		72A6545923FF52580077064B /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				72A6545A23FF52580077064B /* StartControllerCoordinator.swift */,
 				72A6545B23FF52580077064B /* MainCoordinator.swift */,
+				72A6545A23FF52580077064B /* StartControllerCoordinator.swift */,
 				72A6545C23FF52580077064B /* NavigationControllerCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -332,10 +343,18 @@
 		72A6545D23FF52580077064B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4E86321123D29C4000D87E5F /* WelcomeViewController.swift */,
+				4E3D368A2373B4BE001F5A36 /* MainViewController.swift */,
+				4EB903E323CED6C300589315 /* PopUpViewController.swift */,
+				4E3D368C2373B4D7001F5A36 /* TourViewController.swift */,
+				72A6546123FF52580077064B /* StartViewController.swift */,
 				72A6545E23FF52580077064B /* StartViewControllerDelegate.swift */,
 				72A6545F23FF52580077064B /* ViewController.swift */,
 				72A6546023FF52580077064B /* NavigationViewControllerDelegate.swift */,
-				72A6546123FF52580077064B /* StartViewController.swift */,
+				4E31815223FF38C500A11F70 /* BeaconViewController.swift */,
+				4E43B1AD240EDC370011B25A /* BeaconDistanceTableViewController.swift */,
+				4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */,
+				4E943B942405B53B00E251D3 /* EmailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -343,11 +362,11 @@
 		72A6546923FF53850077064B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				72A6546A23FF53850077064B /* ApplicationService.swift */,
-				72A6546B23FF53850077064B /* LocationServiceDelegate.swift */,
 				72A6546C23FF53850077064B /* Helpers */,
 				72A6546E23FF53850077064B /* LocationService.swift */,
+				72A6546B23FF53850077064B /* LocationServiceDelegate.swift */,
 				72A6546F23FF53850077064B /* NavigationService.swift */,
+				72A6546A23FF53850077064B /* ApplicationService.swift */,
 			);
 			name = Services;
 			path = ARtour/Services;
@@ -600,21 +619,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E43B1AE240EDC370011B25A /* BeaconDistanceTableViewController.swift in Sources */,
+				4E76A13E241041B50081FD4F /* CoordinatorDelegate.swift in Sources */,
+				4E76A143241041CE0081FD4F /* LocationTranslation.swift in Sources */,
+				4E76A1352410416B0081FD4F /* NavigationControllerCoordinator.swift in Sources */,
 				4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */,
+				4E76A134241041680081FD4F /* StartControllerCoordinator.swift in Sources */,
+				4E76A13B241041AA0081FD4F /* ControllerCoordinator.swift in Sources */,
+				4E76A145241041F30081FD4F /* CLLocationCoordinate2D+Extension.swift in Sources */,
 				4E943B952405B53B00E251D3 /* EmailViewController.swift in Sources */,
+				4E76A147241041FB0081FD4F /* SCNVector3+Extension.swift in Sources */,
 				4E86321223D29C4000D87E5F /* WelcomeViewController.swift in Sources */,
 				72A653B923FF4EDD0077064B /* Constants.swift in Sources */,
+				4E76A146241041F70081FD4F /* MKRouteStep+Extension.swift in Sources */,
 				72A6547423FF53850077064B /* NavigationService.swift in Sources */,
+				4E76A13C241041AE0081FD4F /* ControllerCoordinatorDelegate.swift in Sources */,
+				4E76A126241040A10081FD4F /* LocationService.swift in Sources */,
+				4E76A149241042050081FD4F /* Double+Extension.swift in Sources */,
+				4E76A123241040960081FD4F /* MatrixHelper.swift in Sources */,
 				72A6545123FF522F0077064B /* LocationData.swift in Sources */,
+				4E76A13F241041B90081FD4F /* CoordinatorType.swift in Sources */,
+				4E76A1382410417C0081FD4F /* NavigationViewControllerDelegate.swift in Sources */,
 				72A6541E23FF4F5B0077064B /* ControllerType.swift in Sources */,
-				72A653BA23FF4EDD0077064B /* CLLocationCoordinate2D+Extension.swift in Sources */,
 				72A653BC23FF4EDD0077064B /* StoryboardIdentifiableError.swift in Sources */,
+				4E76A13D241041B10081FD4F /* Coordinator.swift in Sources */,
+				4E76A13A241041A50081FD4F /* Controller.swift in Sources */,
+				4E76A12D241040B00081FD4F /* ApplicationService.swift in Sources */,
+				4E76A139241041A20081FD4F /* StoryboardIdentifiable.swift in Sources */,
 				4E86320E23D2938A00D87E5F /* QuestionsViewController.swift in Sources */,
+				4E76A140241041BC0081FD4F /* AppCoordinator.swift in Sources */,
 				72A6546523FF52580077064B /* StartViewControllerDelegate.swift in Sources */,
+				4E76A142241041C50081FD4F /* BaseNode.swift in Sources */,
 				72A6541C23FF4F5B0077064B /* MessagePresenting.swift in Sources */,
+				4E76A144241041D60081FD4F /* CLLocation+Extension.swift in Sources */,
+				4E76A148241041FE0081FD4F /* UIStoryboard+Extension.swift in Sources */,
+				4E76A11B241040310081FD4F /* MainCoordinator.swift in Sources */,
 				72A6545023FF522F0077064B /* POIAnnotation.swift in Sources */,
 				72A6547123FF53850077064B /* LocationServiceDelegate.swift in Sources */,
+				4E76A137241041780081FD4F /* ViewController.swift in Sources */,
+				4E76A136241041730081FD4F /* StartViewController.swift in Sources */,
 				4EB903E423CED6C300589315 /* PopUpViewController.swift in Sources */,
+				4E76A141241041C00081FD4F /* Mapable.swift in Sources */,
 				4E31815323FF38C500A11F70 /* BeaconViewController.swift in Sources */,
 				4E3D365B2373AF7B001F5A36 /* AppDelegate.swift in Sources */,
 				4E3D368B2373B4BE001F5A36 /* MainViewController.swift in Sources */,
@@ -626,9 +670,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3D36722373AF7E001F5A36 /* ARtourTests.swift in Sources */,
-				4E86321323D29C4000D87E5F /* WelcomeViewController.swift in Sources */,
-				4EB903E523CED6C300589315 /* PopUpViewController.swift in Sources */,
-				4E86320F23D2938A00D87E5F /* QuestionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,9 +678,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3D367D2373AF7E001F5A36 /* ARtourUITests.swift in Sources */,
-				4E86321423D29C4000D87E5F /* WelcomeViewController.swift in Sources */,
-				4EB903E623CED6C300589315 /* PopUpViewController.swift in Sources */,
-				4E86321023D2938A00D87E5F /* QuestionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

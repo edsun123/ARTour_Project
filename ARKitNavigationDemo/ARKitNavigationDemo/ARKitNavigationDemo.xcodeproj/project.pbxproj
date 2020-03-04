@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A74AF0931F6CA2480000CD5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AF0921F6CA2480000CD5F /* AppDelegate.swift */; };
+		4E76A1322410410F0081FD4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AF0921F6CA2480000CD5F /* AppDelegate.swift */; };
 		A74AF0951F6CA2490000CD5F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A74AF0941F6CA2490000CD5F /* art.scnassets */; };
 		A74AF0971F6CA2490000CD5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AF0961F6CA2490000CD5F /* ViewController.swift */; };
 		A74AF09A1F6CA2490000CD5F /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74AF0981F6CA2490000CD5F /* Navigation.storyboard */; };
@@ -486,6 +486,7 @@
 				A79518CC1F7A1F130030E21A /* LocationData.swift in Sources */,
 				A74AF0DD1F6CA40E0000CD5F /* CLLocation+Extension.swift in Sources */,
 				A74AF0D31F6CA3AF0000CD5F /* MessagePresenting.swift in Sources */,
+				4E76A1322410410F0081FD4F /* AppDelegate.swift in Sources */,
 				A74AF0E51F6CA49E0000CD5F /* Double+Extension.swift in Sources */,
 				A74AF0C51F6CA2A50000CD5F /* LocationService.swift in Sources */,
 				A79518C61F7A1E810030E21A /* CoordinatorType.swift in Sources */,
@@ -499,7 +500,6 @@
 				A74AF0CF1F6CA3850000CD5F /* StoryboardIdentifiable.swift in Sources */,
 				A79518D21F7A1FB10030E21A /* StoryboardIdentifiableError.swift in Sources */,
 				A74AF0C91F6CA34A0000CD5F /* Mapable.swift in Sources */,
-				A74AF0931F6CA2480000CD5F /* AppDelegate.swift in Sources */,
 				A74AF0D71F6CA3D50000CD5F /* POIAnnotation.swift in Sources */,
 				A74AF0DF1F6CA42E0000CD5F /* CLLocationCoordinate2D+Extension.swift in Sources */,
 				A74AF0CB1F6CA35D0000CD5F /* Coordinator.swift in Sources */,

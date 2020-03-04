@@ -272,6 +272,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="PushStart:" destination="amH-94-Jyh" eventType="touchUpInside" id="Dul-15-zHL"/>
+                                    <segue destination="ruF-gp-o08" kind="show" identifier="AugReal" id="kJS-HO-Wts"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnu-nb-4g6">
@@ -308,9 +309,6 @@
                         <viewLayoutGuide key="safeArea" id="kvf-vQ-6xH"/>
                     </view>
                     <navigationItem key="navigationItem" id="iHk-ht-IDx"/>
-                    <connections>
-                        <segue destination="WW0-dr-nE9" kind="show" identifier="AugReal" id="DSb-NI-XaC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0d-ED-FNJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,7 +319,7 @@
             <objects>
                 <viewController storyboardIdentifier="ARPage" modalPresentationStyle="fullScreen" id="WW0-dr-nE9" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w8r-12-kwL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAk-zu-hcb">
@@ -329,7 +327,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9GV-de-2V8">
-                                <rect key="frame" x="194" y="571" width="200" height="203"/>
+                                <rect key="frame" x="194" y="659" width="200" height="203"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -337,12 +335,8 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilb-uZ-zgN">
-                                <rect key="frame" x="324" y="20" width="70" height="30"/>
+                                <rect key="frame" x="335" y="64" width="59" height="30"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ABS-uW-ecQ"/>
-                                    <constraint firstAttribute="width" constant="70" id="IM8-aN-Nrr"/>
-                                </constraints>
                                 <state key="normal" title="Beacons">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -358,6 +352,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Ilb-uZ-zgN" firstAttribute="leading" secondItem="Z0x-dF-Lto" secondAttribute="leading" constant="335" id="dVp-DH-U44"/>
                             <constraint firstItem="Z0x-dF-Lto" firstAttribute="trailing" secondItem="Ilb-uZ-zgN" secondAttribute="trailing" constant="20" id="tzE-G8-vRi"/>
                             <constraint firstItem="Ilb-uZ-zgN" firstAttribute="top" secondItem="Z0x-dF-Lto" secondAttribute="top" constant="20" id="uz6-9c-hy5"/>
                         </constraints>
@@ -578,7 +573,7 @@
             <objects>
                 <tableViewController id="4Qd-NB-Qg5" customClass="BeaconDistanceTableViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kDh-sj-1V0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -606,6 +601,8 @@
                                         <constraint firstItem="UgG-Zk-T5F" firstAttribute="leading" secondItem="9RY-xe-ge7" secondAttribute="leading" constant="20" id="HhT-GN-J7P"/>
                                         <constraint firstItem="UgG-Zk-T5F" firstAttribute="top" secondItem="kgr-pC-VJM" secondAttribute="bottom" constant="5" id="lsF-xJ-6tI"/>
                                         <constraint firstItem="kgr-pC-VJM" firstAttribute="top" secondItem="9RY-xe-ge7" secondAttribute="top" constant="10" id="pHR-Zt-DVV"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kgr-pC-VJM" secondAttribute="trailing" symbolic="YES" id="rQR-G0-cWI"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UgG-Zk-T5F" secondAttribute="trailing" constant="20" symbolic="YES" id="vho-Aw-aue"/>
                                         <constraint firstItem="kgr-pC-VJM" firstAttribute="leading" secondItem="9RY-xe-ge7" secondAttribute="leading" constant="20" id="wNp-Xo-Qt0"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -633,7 +630,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEH-bg-l09" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1720" y="-5"/>
+            <point key="canvasLocation" x="2549" y="55"/>
         </scene>
     </scenes>
 </document>
