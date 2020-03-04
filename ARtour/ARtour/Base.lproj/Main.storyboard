@@ -319,7 +319,7 @@
         <!--View Controller-->
         <scene sceneID="PZB-aV-wl2">
             <objects>
-                <viewController storyboardIdentifier="ARPage" modalPresentationStyle="fullScreen" id="WW0-dr-nE9" customClass="ViewController" customModule="ARtour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ARPage" modalPresentationStyle="fullScreen" id="WW0-dr-nE9" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w8r-12-kwL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -566,6 +566,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="200" height="203"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="U4q-MP-8dP"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAh-gO-yUd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

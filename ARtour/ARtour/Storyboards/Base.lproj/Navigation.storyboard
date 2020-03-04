@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,22 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qP7-DK-vfk">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qP7-DK-vfk">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="234"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8A-a2-D9V">
                                 <rect key="frame" x="165" y="506" width="108" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="azz-PJ-fCR">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azz-PJ-fCR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="609"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qP7-DK-vfk" firstAttribute="top" secondItem="Ma0-Fz-KrA" secondAttribute="top" id="43r-me-fDw"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="azz-PJ-fCR" secondAttribute="bottom" constant="-41" id="78U-oY-woO"/>
+                            <constraint firstItem="qP7-DK-vfk" firstAttribute="leading" secondItem="azz-PJ-fCR" secondAttribute="leading" id="Ib2-Ee-4MJ"/>
                             <constraint firstItem="qP7-DK-vfk" firstAttribute="leading" secondItem="Ma0-Fz-KrA" secondAttribute="leading" id="KFt-uH-ItJ"/>
+                            <constraint firstItem="qP7-DK-vfk" firstAttribute="trailing" secondItem="azz-PJ-fCR" secondAttribute="trailing" id="Ryt-a7-8i9"/>
+                            <constraint firstItem="qP7-DK-vfk" firstAttribute="top" secondItem="azz-PJ-fCR" secondAttribute="top" id="VCi-4a-O4R"/>
+                            <constraint firstAttribute="bottom" secondItem="qP7-DK-vfk" secondAttribute="bottom" constant="334" id="g4k-PY-diJ"/>
                             <constraint firstAttribute="trailing" secondItem="qP7-DK-vfk" secondAttribute="trailing" id="yoe-S7-qhB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qRm-Jb-I29"/>
