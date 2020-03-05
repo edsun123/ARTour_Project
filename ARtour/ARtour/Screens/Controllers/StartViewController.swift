@@ -44,7 +44,6 @@ final class StartViewController: UIViewController, Controller {
 //            press.minimumPressDuration = 0.35
 //            mapView.addGestureRecognizer(press)
             self.handleMapTap()
-//
             mapView.delegate = self
         } else {
             presentMessage(title: "Not Compatible", message: "ARKit is not compatible with this phone.")
@@ -200,7 +199,7 @@ final class StartViewController: UIViewController, Controller {
     
     // Calculates intermediary coordinates for first route step
     private func getInitialLeg(for tripStep: MKRoute.Step) {
-        let nextLocation = CLLocation(latitude: tripStep.polyline.coordinate.latitude, longitude: tripStep.polyline.coordinate.longitude)
+        let nextLocation = CLLocation(latitude:tripStep.polyline.coordinate.latitude, longitude: tripStep.polyline.coordinate.longitude)
         let intermediaries = CLLocationCoordinate2D.getIntermediaryLocations(currentLocation: startingLocation, destinationLocation: nextLocation)
         currentTripLegs.append(intermediaries)
     }
@@ -218,7 +217,8 @@ final class StartViewController: UIViewController, Controller {
                     self.annotationColor = .blue
                 }
                 self.mapView?.addAnnotation(annotation)
-                self.mapView.addOverlay(MKCircle(center: annotation.coordinate, radius: 0.2))
+//                self.mapView.addOverlay(MKCircle(center: annotation.coordinate, radius: 0.2))
+                self.mapView.add(MKCircle(center: annotation.coordinate, radius: 0.2))
             }
         }
     }

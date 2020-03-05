@@ -46,12 +46,14 @@ final class StartControllerCoordinator: ControllerCoordinator {
 extension StartControllerCoordinator: StartViewControllerDelegate {
     
     func startNavigation(with route: [POIAnnotation], for destination: CLLocation, and legs: [[CLLocationCoordinate2D]], and step: [MKRoute.Step]) {
+        print("ViewDidLoad_routemade")
         delegate?.setLocationData(for: route, with: destination, and: legs, and: step)
         delegate?.transitionCoordinator(type: .app)
     }
 
     
     func startNavigation(tapped: Bool) {
+        print("Start_navigation_tapped")
         delegate?.transitionCoordinator(type: .app)
     }
 }

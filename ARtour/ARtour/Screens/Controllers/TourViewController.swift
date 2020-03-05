@@ -21,10 +21,13 @@ class TourViewController: UIViewController {
 
   var window: UIWindow?
   var appCoordinator: MainCoordinator!
-
     
     @IBAction func PushStart(_ sender: Any) {
-        self.performSegue(withIdentifier: "AugReal", sender: self)
+//        self.performSegue(withIdentifier: "AugReal", sender: self)
+        window = UIWindow (frame: UIScreen.main.bounds)
+        if let window = window{
+            appCoordinator = MainCoordinator(window: window)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

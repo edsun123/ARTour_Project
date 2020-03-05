@@ -272,7 +272,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="PushStart:" destination="amH-94-Jyh" eventType="touchUpInside" id="Dul-15-zHL"/>
-                                    <segue destination="ruF-gp-o08" kind="show" identifier="AugReal" id="kJS-HO-Wts"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnu-nb-4g6">
@@ -621,16 +620,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJ6-NM-Cbi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4419" y="-236"/>
-        </scene>
-        <!--StartViewController-->
-        <scene sceneID="i0z-MD-jVK">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Start" referencedIdentifier="StartViewController" id="ruF-gp-o08" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="gdG-nZ-xd1"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NEH-bg-l09" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2549" y="55"/>
         </scene>
     </scenes>
 </document>

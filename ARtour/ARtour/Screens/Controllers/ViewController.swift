@@ -50,6 +50,10 @@ class ViewController: UIViewController {
         setupNavigation()
 
     }
+    
+//    @IBAction func BackButton(_ sender: Any) {
+//
+//    }
 }
 
 extension ViewController: Controller {
@@ -181,7 +185,9 @@ extension ViewController: MessagePresenting {
                     self.annotationColor = .blue
                 }
                 map.addAnnotation(annotation)
-                map.addOverlay(MKCircle(center: annotation.coordinate, radius: 0.2))
+//                map.addOverlay(MKCircle(center: annotation.coordinate, radius: 0.2))
+                map.add(MKCircle(center: annotation.coordinate, radius: 0.2))
+
             }
         }
     }
