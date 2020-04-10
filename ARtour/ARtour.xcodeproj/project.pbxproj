@@ -10,8 +10,7 @@
 		487EEFC9F26A058A09E38F9E /* Pods_ARtour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C03FB7721291A386CB104AA /* Pods_ARtour.framework */; };
 		4A69173708AB010EBB1BCA7F /* Pods_ARtourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C749016CB509AECE92FB39B /* Pods_ARtourUITests.framework */; };
 		4E3D365B2373AF7B001F5A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */; };
-		4E3D365D2373AF7B001F5A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365C2373AF7B001F5A36 /* ViewController.swift */; };
-		4E3D365F2373AF7B001F5A36 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365E2373AF7B001F5A36 /* Experience.rcproject */; };
+		4E3D365D2373AF7B001F5A36 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D365C2373AF7B001F5A36 /* ViewController2.swift */; };
 		4E3D36622373AF7B001F5A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3D36602373AF7B001F5A36 /* Main.storyboard */; };
 		4E3D36642373AF7E001F5A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3D36632373AF7E001F5A36 /* Assets.xcassets */; };
 		4E3D36672373AF7E001F5A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3D36652373AF7E001F5A36 /* LaunchScreen.storyboard */; };
@@ -19,9 +18,6 @@
 		4E3D367D2373AF7E001F5A36 /* ARtourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D367C2373AF7E001F5A36 /* ARtourUITests.swift */; };
 		4E3D368B2373B4BE001F5A36 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D368A2373B4BE001F5A36 /* MainViewController.swift */; };
 		4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D368C2373B4D7001F5A36 /* TourViewController.swift */; };
-		4E5558F923CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
-		4E5558FA23CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
-		4E5558FB23CED43E00A331B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */; };
 		4E86320E23D2938A00D87E5F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */; };
 		4E86320F23D2938A00D87E5F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */; };
 		4E86321023D2938A00D87E5F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */; };
@@ -31,6 +27,44 @@
 		4EB903E423CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
 		4EB903E523CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
 		4EB903E623CED6C300589315 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB903E323CED6C300589315 /* PopUpViewController.swift */; };
+		72A653B923FF4EDD0077064B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B123FF4EDC0077064B /* Constants.swift */; };
+		72A653BA23FF4EDD0077064B /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B223FF4EDC0077064B /* CLLocationCoordinate2D+Extension.swift */; };
+		72A653BB23FF4EDD0077064B /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B323FF4EDC0077064B /* CLLocation+Extension.swift */; };
+		72A653BC23FF4EDD0077064B /* StoryboardIdentifiableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B423FF4EDC0077064B /* StoryboardIdentifiableError.swift */; };
+		72A653BD23FF4EDD0077064B /* SCNVector3+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B523FF4EDC0077064B /* SCNVector3+Extension.swift */; };
+		72A653BE23FF4EDD0077064B /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B623FF4EDC0077064B /* Double+Extension.swift */; };
+		72A653BF23FF4EDD0077064B /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B723FF4EDC0077064B /* UIStoryboard+Extension.swift */; };
+		72A653C023FF4EDD0077064B /* MKRouteStep+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A653B823FF4EDC0077064B /* MKRouteStep+Extension.swift */; };
+		72A6540523FF4F360077064B /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A6540223FF4F360077064B /* Start.storyboard */; };
+		72A6540623FF4F360077064B /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A6540323FF4F360077064B /* Navigation.storyboard */; };
+		72A6541423FF4F5B0077064B /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540923FF4F5B0077064B /* CoordinatorType.swift */; };
+		72A6541523FF4F5B0077064B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540A23FF4F5B0077064B /* AppCoordinator.swift */; };
+		72A6541623FF4F5B0077064B /* ControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540B23FF4F5B0077064B /* ControllerCoordinator.swift */; };
+		72A6541723FF4F5B0077064B /* ControllerCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540C23FF4F5B0077064B /* ControllerCoordinatorDelegate.swift */; };
+		72A6541823FF4F5B0077064B /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540D23FF4F5B0077064B /* CoordinatorDelegate.swift */; };
+		72A6541923FF4F5B0077064B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540E23FF4F5B0077064B /* Coordinator.swift */; };
+		72A6541A23FF4F5B0077064B /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6540F23FF4F5B0077064B /* StoryboardIdentifiable.swift */; };
+		72A6541B23FF4F5B0077064B /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6541023FF4F5B0077064B /* Controller.swift */; };
+		72A6541C23FF4F5B0077064B /* MessagePresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6541123FF4F5B0077064B /* MessagePresenting.swift */; };
+		72A6541D23FF4F5B0077064B /* Mapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6541223FF4F5B0077064B /* Mapable.swift */; };
+		72A6541E23FF4F5B0077064B /* ControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6541323FF4F5B0077064B /* ControllerType.swift */; };
+		72A6544F23FF522F0077064B /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6544423FF522F0077064B /* BaseNode.swift */; };
+		72A6545023FF522F0077064B /* POIAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6544523FF522F0077064B /* POIAnnotation.swift */; };
+		72A6545123FF522F0077064B /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6544623FF522F0077064B /* LocationData.swift */; };
+		72A6545223FF522F0077064B /* LocationTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6544723FF522F0077064B /* LocationTranslation.swift */; };
+		72A6546223FF52580077064B /* StartControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6545A23FF52580077064B /* StartControllerCoordinator.swift */; };
+		72A6546323FF52580077064B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6545B23FF52580077064B /* MainCoordinator.swift */; };
+		72A6546423FF52580077064B /* NavigationControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6545C23FF52580077064B /* NavigationControllerCoordinator.swift */; };
+		72A6546523FF52580077064B /* StartViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6545E23FF52580077064B /* StartViewControllerDelegate.swift */; };
+		72A6546623FF52580077064B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6545F23FF52580077064B /* ViewController.swift */; };
+		72A6546723FF52580077064B /* NavigationViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546023FF52580077064B /* NavigationViewControllerDelegate.swift */; };
+		72A6546823FF52580077064B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546123FF52580077064B /* StartViewController.swift */; };
+		72A6547023FF53850077064B /* ApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546A23FF53850077064B /* ApplicationService.swift */; };
+		72A6547123FF53850077064B /* LocationServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546B23FF53850077064B /* LocationServiceDelegate.swift */; };
+		72A6547223FF53850077064B /* MatrixHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546D23FF53850077064B /* MatrixHelper.swift */; };
+		72A6547323FF53850077064B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546E23FF53850077064B /* LocationService.swift */; };
+		72A6547423FF53850077064B /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6546F23FF53850077064B /* NavigationService.swift */; };
+		72E45AC923F3437C0013FC00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72E45AC823F3437C0013FC00 /* GoogleService-Info.plist */; };
 		F490A70470B40B2B45E2FBFA /* Pods_ARtourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC71DEE9CA819CD620754AC7 /* Pods_ARtourTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +88,7 @@
 /* Begin PBXFileReference section */
 		4E3D36572373AF7B001F5A36 /* ARtour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARtour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4E3D365C2373AF7B001F5A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4E3D365E2373AF7B001F5A36 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		4E3D365C2373AF7B001F5A36 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		4E3D36612373AF7B001F5A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E3D36632373AF7E001F5A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E3D36662373AF7E001F5A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,12 +101,49 @@
 		4E3D367E2373AF7E001F5A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E3D368A2373B4BE001F5A36 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4E3D368C2373B4D7001F5A36 /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
-		4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		4E86321123D29C4000D87E5F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4EB903E323CED6C300589315 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = SOURCE_ROOT; };
 		53E5609261D5BBEA800FD2B1 /* Pods-ARtourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.debug.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A2C28316DBB3D23BFB58104 /* Pods-ARtourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtourTests.release.xcconfig"; path = "Target Support Files/Pods-ARtourTests/Pods-ARtourTests.release.xcconfig"; sourceTree = "<group>"; };
+		72A653B123FF4EDC0077064B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		72A653B223FF4EDC0077064B /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
+		72A653B323FF4EDC0077064B /* CLLocation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extension.swift"; sourceTree = "<group>"; };
+		72A653B423FF4EDC0077064B /* StoryboardIdentifiableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiableError.swift; sourceTree = "<group>"; };
+		72A653B523FF4EDC0077064B /* SCNVector3+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extension.swift"; sourceTree = "<group>"; };
+		72A653B623FF4EDC0077064B /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		72A653B723FF4EDC0077064B /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		72A653B823FF4EDC0077064B /* MKRouteStep+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKRouteStep+Extension.swift"; sourceTree = "<group>"; };
+		72A6540223FF4F360077064B /* Start.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+		72A6540423FF4F360077064B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Navigation.storyboard; sourceTree = "<group>"; };
+		72A6540923FF4F5B0077064B /* CoordinatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		72A6540A23FF4F5B0077064B /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		72A6540B23FF4F5B0077064B /* ControllerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerCoordinator.swift; sourceTree = "<group>"; };
+		72A6540C23FF4F5B0077064B /* ControllerCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		72A6540D23FF4F5B0077064B /* CoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegate.swift; sourceTree = "<group>"; };
+		72A6540E23FF4F5B0077064B /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		72A6540F23FF4F5B0077064B /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		72A6541023FF4F5B0077064B /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		72A6541123FF4F5B0077064B /* MessagePresenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePresenting.swift; sourceTree = "<group>"; };
+		72A6541223FF4F5B0077064B /* Mapable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapable.swift; sourceTree = "<group>"; };
+		72A6541323FF4F5B0077064B /* ControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerType.swift; sourceTree = "<group>"; };
+		72A6544423FF522F0077064B /* BaseNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
+		72A6544523FF522F0077064B /* POIAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POIAnnotation.swift; sourceTree = "<group>"; };
+		72A6544623FF522F0077064B /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		72A6544723FF522F0077064B /* LocationTranslation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTranslation.swift; sourceTree = "<group>"; };
+		72A6545A23FF52580077064B /* StartControllerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartControllerCoordinator.swift; sourceTree = "<group>"; };
+		72A6545B23FF52580077064B /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		72A6545C23FF52580077064B /* NavigationControllerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerCoordinator.swift; sourceTree = "<group>"; };
+		72A6545E23FF52580077064B /* StartViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewControllerDelegate.swift; sourceTree = "<group>"; };
+		72A6545F23FF52580077064B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72A6546023FF52580077064B /* NavigationViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerDelegate.swift; sourceTree = "<group>"; };
+		72A6546123FF52580077064B /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		72A6546A23FF53850077064B /* ApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationService.swift; sourceTree = "<group>"; };
+		72A6546B23FF53850077064B /* LocationServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServiceDelegate.swift; sourceTree = "<group>"; };
+		72A6546D23FF53850077064B /* MatrixHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixHelper.swift; sourceTree = "<group>"; };
+		72A6546E23FF53850077064B /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		72A6546F23FF53850077064B /* NavigationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		72E45AC823F3437C0013FC00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7C749016CB509AECE92FB39B /* Pods_ARtourUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtourUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C03FB7721291A386CB104AA /* Pods_ARtour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARtour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D138DAE3D44C015A581331F /* Pods-ARtour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARtour.release.xcconfig"; path = "Target Support Files/Pods-ARtour/Pods-ARtour.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,19 +206,24 @@
 		4E3D36592373AF7B001F5A36 /* ARtour */ = {
 			isa = PBXGroup;
 			children = (
+				72A6546923FF53850077064B /* Services */,
+				72A6545823FF52580077064B /* Screens */,
+				72A6544323FF522F0077064B /* Models */,
+				72A6540723FF4F5B0077064B /* Protocols */,
+				72A6540123FF4F360077064B /* Storyboards */,
+				72A653B023FF4EDC0077064B /* Extensions */,
 				4E3D365A2373AF7B001F5A36 /* AppDelegate.swift */,
 				4E86321123D29C4000D87E5F /* WelcomeViewController.swift */,
 				4E3D368A2373B4BE001F5A36 /* MainViewController.swift */,
 				4EB903E323CED6C300589315 /* PopUpViewController.swift */,
 				4E3D368C2373B4D7001F5A36 /* TourViewController.swift */,
-				4E3D365C2373AF7B001F5A36 /* ViewController.swift */,
+				4E3D365C2373AF7B001F5A36 /* ViewController2.swift */,
 				4E86320D23D2938A00D87E5F /* QuestionsViewController.swift */,
-				4E3D365E2373AF7B001F5A36 /* Experience.rcproject */,
 				4E3D36602373AF7B001F5A36 /* Main.storyboard */,
 				4E3D36632373AF7E001F5A36 /* Assets.xcassets */,
+				72E45AC823F3437C0013FC00 /* GoogleService-Info.plist */,
 				4E3D36652373AF7E001F5A36 /* LaunchScreen.storyboard */,
 				4E3D36682373AF7E001F5A36 /* Info.plist */,
-				4E5558F823CED43E00A331B4 /* GoogleService-Info.plist */,
 			);
 			path = ARtour;
 			sourceTree = "<group>";
@@ -179,6 +254,119 @@
 				7C749016CB509AECE92FB39B /* Pods_ARtourUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72A653B023FF4EDC0077064B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				72A653B123FF4EDC0077064B /* Constants.swift */,
+				72A653B223FF4EDC0077064B /* CLLocationCoordinate2D+Extension.swift */,
+				72A653B323FF4EDC0077064B /* CLLocation+Extension.swift */,
+				72A653B423FF4EDC0077064B /* StoryboardIdentifiableError.swift */,
+				72A653B523FF4EDC0077064B /* SCNVector3+Extension.swift */,
+				72A653B623FF4EDC0077064B /* Double+Extension.swift */,
+				72A653B723FF4EDC0077064B /* UIStoryboard+Extension.swift */,
+				72A653B823FF4EDC0077064B /* MKRouteStep+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		72A6540123FF4F360077064B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				72A6540223FF4F360077064B /* Start.storyboard */,
+				72A6540323FF4F360077064B /* Navigation.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		72A6540723FF4F5B0077064B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				72A6540823FF4F5B0077064B /* CoordinatorProtocols */,
+				72A6540F23FF4F5B0077064B /* StoryboardIdentifiable.swift */,
+				72A6541023FF4F5B0077064B /* Controller.swift */,
+				72A6541123FF4F5B0077064B /* MessagePresenting.swift */,
+				72A6541223FF4F5B0077064B /* Mapable.swift */,
+				72A6541323FF4F5B0077064B /* ControllerType.swift */,
+			);
+			name = Protocols;
+			path = ../../ARKitNavigationDemo/ARKitNavigationDemo/ARKitNavigationDemo/Protocols;
+			sourceTree = "<group>";
+		};
+		72A6540823FF4F5B0077064B /* CoordinatorProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				72A6540923FF4F5B0077064B /* CoordinatorType.swift */,
+				72A6540A23FF4F5B0077064B /* AppCoordinator.swift */,
+				72A6540B23FF4F5B0077064B /* ControllerCoordinator.swift */,
+				72A6540C23FF4F5B0077064B /* ControllerCoordinatorDelegate.swift */,
+				72A6540D23FF4F5B0077064B /* CoordinatorDelegate.swift */,
+				72A6540E23FF4F5B0077064B /* Coordinator.swift */,
+			);
+			path = CoordinatorProtocols;
+			sourceTree = "<group>";
+		};
+		72A6544323FF522F0077064B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72A6544423FF522F0077064B /* BaseNode.swift */,
+				72A6544523FF522F0077064B /* POIAnnotation.swift */,
+				72A6544623FF522F0077064B /* LocationData.swift */,
+				72A6544723FF522F0077064B /* LocationTranslation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72A6545823FF52580077064B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				72A6545923FF52580077064B /* Coordinators */,
+				72A6545D23FF52580077064B /* Controllers */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		72A6545923FF52580077064B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				72A6545A23FF52580077064B /* StartControllerCoordinator.swift */,
+				72A6545B23FF52580077064B /* MainCoordinator.swift */,
+				72A6545C23FF52580077064B /* NavigationControllerCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		72A6545D23FF52580077064B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72A6545E23FF52580077064B /* StartViewControllerDelegate.swift */,
+				72A6545F23FF52580077064B /* ViewController.swift */,
+				72A6546023FF52580077064B /* NavigationViewControllerDelegate.swift */,
+				72A6546123FF52580077064B /* StartViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		72A6546923FF53850077064B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				72A6546A23FF53850077064B /* ApplicationService.swift */,
+				72A6546B23FF53850077064B /* LocationServiceDelegate.swift */,
+				72A6546C23FF53850077064B /* Helpers */,
+				72A6546E23FF53850077064B /* LocationService.swift */,
+				72A6546F23FF53850077064B /* NavigationService.swift */,
+			);
+			name = Services;
+			path = ARtour/Services;
+			sourceTree = SOURCE_ROOT;
+		};
+		72A6546C23FF53850077064B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				72A6546D23FF53850077064B /* MatrixHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		D8B1DBC5AF94057FC7356534 /* Pods */ = {
@@ -303,7 +491,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3D36672373AF7E001F5A36 /* LaunchScreen.storyboard in Resources */,
-				4E5558F923CED43E00A331B4 /* GoogleService-Info.plist in Resources */,
+				72E45AC923F3437C0013FC00 /* GoogleService-Info.plist in Resources */,
+				72A6540623FF4F360077064B /* Navigation.storyboard in Resources */,
+				72A6540523FF4F360077064B /* Start.storyboard in Resources */,
 				4E3D36642373AF7E001F5A36 /* Assets.xcassets in Resources */,
 				4E3D36622373AF7B001F5A36 /* Main.storyboard in Resources */,
 			);
@@ -313,7 +503,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5558FA23CED43E00A331B4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +510,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5558FB23CED43E00A331B4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,13 +606,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A6541523FF4F5B0077064B /* AppCoordinator.swift in Sources */,
+				72A6546223FF52580077064B /* StartControllerCoordinator.swift in Sources */,
 				4E3D368D2373B4D7001F5A36 /* TourViewController.swift in Sources */,
+				72A6547223FF53850077064B /* MatrixHelper.swift in Sources */,
+				72A6546823FF52580077064B /* StartViewController.swift in Sources */,
+				72A6541B23FF4F5B0077064B /* Controller.swift in Sources */,
+				72A6541D23FF4F5B0077064B /* Mapable.swift in Sources */,
 				4E86321223D29C4000D87E5F /* WelcomeViewController.swift in Sources */,
+				72A653B923FF4EDD0077064B /* Constants.swift in Sources */,
+				72A6547423FF53850077064B /* NavigationService.swift in Sources */,
+				72A6545123FF522F0077064B /* LocationData.swift in Sources */,
+				72A6541E23FF4F5B0077064B /* ControllerType.swift in Sources */,
+				72A653BA23FF4EDD0077064B /* CLLocationCoordinate2D+Extension.swift in Sources */,
+				72A653BC23FF4EDD0077064B /* StoryboardIdentifiableError.swift in Sources */,
 				4E86320E23D2938A00D87E5F /* QuestionsViewController.swift in Sources */,
+				72A6546523FF52580077064B /* StartViewControllerDelegate.swift in Sources */,
+				72A6541C23FF4F5B0077064B /* MessagePresenting.swift in Sources */,
+				72A6545023FF522F0077064B /* POIAnnotation.swift in Sources */,
+				72A6547123FF53850077064B /* LocationServiceDelegate.swift in Sources */,
 				4EB903E423CED6C300589315 /* PopUpViewController.swift in Sources */,
-				4E3D365D2373AF7B001F5A36 /* ViewController.swift in Sources */,
+				72A6541423FF4F5B0077064B /* CoordinatorType.swift in Sources */,
+				72A6541723FF4F5B0077064B /* ControllerCoordinatorDelegate.swift in Sources */,
+				72A6546423FF52580077064B /* NavigationControllerCoordinator.swift in Sources */,
+				72A653BE23FF4EDD0077064B /* Double+Extension.swift in Sources */,
+				72A6546323FF52580077064B /* MainCoordinator.swift in Sources */,
+				72A653BB23FF4EDD0077064B /* CLLocation+Extension.swift in Sources */,
+				72A6546623FF52580077064B /* ViewController.swift in Sources */,
+				72A653BD23FF4EDD0077064B /* SCNVector3+Extension.swift in Sources */,
+				4E3D365D2373AF7B001F5A36 /* ViewController2.swift in Sources */,
+				72A6545223FF522F0077064B /* LocationTranslation.swift in Sources */,
+				72A6544F23FF522F0077064B /* BaseNode.swift in Sources */,
+				72A6541623FF4F5B0077064B /* ControllerCoordinator.swift in Sources */,
+				72A653C023FF4EDD0077064B /* MKRouteStep+Extension.swift in Sources */,
+				72A6541A23FF4F5B0077064B /* StoryboardIdentifiable.swift in Sources */,
+				72A653BF23FF4EDD0077064B /* UIStoryboard+Extension.swift in Sources */,
+				72A6547023FF53850077064B /* ApplicationService.swift in Sources */,
+				72A6541923FF4F5B0077064B /* Coordinator.swift in Sources */,
+				72A6541823FF4F5B0077064B /* CoordinatorDelegate.swift in Sources */,
 				4E3D365B2373AF7B001F5A36 /* AppDelegate.swift in Sources */,
-				4E3D365F2373AF7B001F5A36 /* Experience.rcproject in Sources */,
+				72A6546723FF52580077064B /* NavigationViewControllerDelegate.swift in Sources */,
+				72A6547323FF53850077064B /* LocationService.swift in Sources */,
 				4E3D368B2373B4BE001F5A36 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +705,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		72A6540323FF4F360077064B /* Navigation.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A6540423FF4F360077064B /* Base */,
+			);
+			name = Navigation.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -536,7 +766,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -590,7 +820,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -607,16 +837,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J5PZNTS9QG;
+				DEVELOPMENT_TEAM = 6C6XS2UW58;
 				INFOPLIST_FILE = ARtour/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.ARtour;
+				PRODUCT_BUNDLE_IDENTIFIER = ARCL3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -628,16 +859,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J5PZNTS9QG;
+				DEVELOPMENT_TEAM = 6C6XS2UW58;
 				INFOPLIST_FILE = ARtour/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SeniorDesign.ARtour;
+				PRODUCT_BUNDLE_IDENTIFIER = ARCL3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
