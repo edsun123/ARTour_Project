@@ -2,7 +2,7 @@
 
 ## Engineering Addendum
 
-###### iOS Application Quick Start
+## iOS Application Quick Start
 
 **Requirements**
 * Apple computer running Xcode 11, Swift 5
@@ -20,7 +20,7 @@
 **Troubleshooting**
 * Make sure the file `GoogleService-Info.plist` is located in the Downloads folder. If this error still persists, a new one may need to be downloaded from the Google Firebase Project. See the file `README_SOFTWARE.md` for more information on Firebase.
 
-###### Beacons Quick Start
+## Beacons Quick Start
 
 **Requirements**
 * ESP 32 HUZZAH Boards and Cable
