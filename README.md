@@ -2,8 +2,6 @@
 
 ## Engineering Addendum
 
-The Engineering Addendum is quick-start documentation written to any future team that may continue to work on your project. This is where you outline the gotchas of your project, types of things to look out for, the current state of the project, etc. The purpose of README.md is to save any future team weeks of detective work just to get to where you are today. Think back to what types of things you had wished you knew earlier, doing future teams a favor by passing that knowledge along.
-
 ###### iOS Application Quick Start
 
 **Requirements**
@@ -17,6 +15,7 @@ The Engineering Addendum is quick-start documentation written to any future team
 **Current Status**
 * The iOS application has the AR framework already built-in and the destination of Photonics is hard coded in
 * This version does not have beacon connectivity enabled => See the beacons quick start guide below for more info on this
+* This version does not pull tour information from the Firestore database. Once beacon connectivity has been established, each time a signal is received the application is supposed to pull info based on location and display that info in the AR experience.
 
 **Troubleshooting**
 * Make sure the file `GoogleService-Info.plist` is located in the Downloads folder. If this error still persists, a new one may need to be downloaded from the Google Firebase Project. See the file `README_SOFTWARE.md` for more information on Firebase.
