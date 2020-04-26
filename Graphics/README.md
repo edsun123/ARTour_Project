@@ -1,5 +1,5 @@
 # Graphics
 
-* Model Showing - creating graphics
+* Model Showing - learning to create basic graphics
 * MuseumAR - learning how to make pop ups
-* Test1 - custom graphics
+* Test1 - learning to create custom graphics
