@@ -32,3 +32,9 @@ The steps (related to software) needed to be taken for project completion are:
 4. Reach goals:  navigation between floors, navigating between other colleges, and incorporating video content to the AR experience.
 5. Optional: upload the modules to the online database in order to make the App dynamic and being able to change the content without actually changing the code of the App.
 
+Tool information:
+
+To develop the aplication, it is needed a Mac that can run Xcode 11 and Swift 5.
+To test the application it is needed and iPhone that can run iOS version 13.1 - 13.2. Currently only those versions support the framework that our team has built, but maybe in the future this changes.
+The database is fire store which is online.
+Optional: if an specific model wants to be build, it is recommended to use Autodesk Maya and Unity, the most recent.
