@@ -10,7 +10,7 @@
 
 **How To Run**
 1. Open `ARtour/ARtour.xcworkspace` in Xcode
-2. Connect the iPhone to the computer and run the application on the iPhone
+2. Connect the iPhone to the computer and run the application on the iPhone. The application requires the use of the phone's current location for GPS navigation
 
 **Current Status**
 * This version has the AR framework already built-in and the destination of Photonics is hard coded in
@@ -28,7 +28,7 @@
 
 **How To Run**
 1. Run the project `beacons/beacon_test_apps/RangingForBeacons/Beacon Sample/Beacon Sample.xcodeproj` on an iPhone following the same steps to run the iOS application
-2. Upload the file `beacon/` to the ESP 32 HUZZAH boards
+2. Upload the files `beacons/ibeacon/beacon/main/ibeacon_demo.c` to the ESP 32 HUZZAH boards
 3. Turn the beacons on by connecting the ESP 32 HUZZAH boards to the battery
 
 **Current Status**
