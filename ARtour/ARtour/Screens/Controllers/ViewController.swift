@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     private var updateNodes: Bool = false
     private var anchors: [ARAnchor] = []
     private var nodes: [BaseNode] = []
-    private var steps: [MKRouteStep] = []
+    private var steps: [MKRoute.Step] = []
     private var locationService = LocationService()
     internal var annotations: [POIAnnotation] = []
     internal var startingLocation: CLLocation!
@@ -50,6 +50,10 @@ class ViewController: UIViewController {
         setupNavigation()
 
     }
+    
+//    @IBAction func BackButton(_ sender: Any) {
+//
+//    }
 }
 
 extension ViewController: Controller {
@@ -181,7 +185,9 @@ extension ViewController: MessagePresenting {
                     self.annotationColor = .blue
                 }
                 map.addAnnotation(annotation)
+//                map.addOverlay(MKCircle(center: annotation.coordinate, radius: 0.2))
                 map.add(MKCircle(center: annotation.coordinate, radius: 0.2))
+
             }
         }
     }
@@ -311,7 +317,7 @@ extension ViewController: MKMapViewDelegate {
 
 extension ViewController:  Mapable{
 
-    private func addAnchors(steps: [MKRouteStep]) {
+    private func addAnchors(steps: [MKRoute.Step]) {
         guard startingLocation != nil && steps.count > 0 else { return }
         for step in steps { addSphere(for: step) }
         for location in locations { addSphere(for: location) }

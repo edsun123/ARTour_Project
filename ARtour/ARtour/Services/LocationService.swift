@@ -51,6 +51,8 @@ final class LocationService: NSObject, CLLocationManagerDelegate {
             startUpdatingLocation(locationManager: locationManager)
         case .denied, .notDetermined, .restricted:
             stopUpdatingLocation(locationManager: locationManager)
+        @unknown default:
+            print("Unknown Error Occurred")
         }
     }
     
