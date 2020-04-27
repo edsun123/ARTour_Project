@@ -18,6 +18,14 @@ Two types of testing were used to collect RSSI data from our beacons
 
 Through our testing we were able to find that the beacon signal was able to be reached from upto 16m away. Using both stagnant and steady walking pace testing, we found that the optimal distance where the RSSI readings were most linear was between 5-6m. We concluded that in order to have the best positioning, our beacons should be placed between 5-6m apart when mapping each building.
 
+#### Stagnant Test Data
+
+![image](https://github.com/BostonUniversitySeniorDesign/20-25-Artour/blob/master/stagnant_test.PNG)
+
+#### Walking Test Data
+
+![image](https://github.com/BostonUniversitySeniorDesign/20-25-Artour/blob/master/walking_test.PNG)
+
 ## Mapping
 
 The beacons were mapped out according to outlets available in each of the three buildings in order to minimize the need for regularly recharging or replacing batteries. When placing our beacons at these outlets with optimal distance between them, trilateration would be used with the RSSI values to pinpoint the user’s location as they walk through the buildings.
@@ -39,6 +47,13 @@ The two devices work as a pair communicating wirelessly using the IR diode as th
 -the NFC IR LED receives the fob signal and ID compares it to the ID it is coded to find
 -if confirmed, the NFC sends a signal a confirmation to the fob through its IR diode and the confirmation is received by the fob’s IR LED 
 After establishing the basic communication, we were considering placing an LED on the fob meant to light up when the hub sends back confirmation to signal a successful interaction for the user. The ID authentication would not take place on the hardware, but in the software half of the design. (This part was not complete). The hub would also have its own ID to signify its location to the app (further development of the project would anticipate multiple destination points thus multiple hubs and different visual experiences).
+
+fob schematic
+![image](https://user-images.githubusercontent.com/24261732/80330716-e969c280-8813-11ea-9b19-69323735bb69.png)
+
+
+![image](https://user-images.githubusercontent.com/24261732/80330776-15854380-8814-11ea-95e7-cc844883e3cb.png)
+This is what the fob would look like had the device been completed. This is a reference picture from a former project
 
 # Resources
   - our client C code was modified to code both the hub and Fob key
