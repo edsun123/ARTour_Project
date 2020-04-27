@@ -18,6 +18,14 @@ Two types of testing were used to collect RSSI data from our beacons
 
 Through our testing we were able to find that the beacon signal was able to be reached from upto 16m away. Using both stagnant and steady walking pace testing, we found that the optimal distance where the RSSI readings were most linear was between 5-6m. We concluded that in order to have the best positioning, our beacons should be placed between 5-6m apart when mapping each building.
 
+#### Stagnant Test Data
+
+![image](https://github.com/BostonUniversitySeniorDesign/20-25-Artour/blob/master/stagnant_test.PNG)
+
+#### Walking Test Data
+
+![image](https://github.com/BostonUniversitySeniorDesign/20-25-Artour/blob/master/walking_test.PNG)
+
 ## Mapping
 
 The beacons were mapped out according to outlets available in each of the three buildings in order to minimize the need for regularly recharging or replacing batteries. When placing our beacons at these outlets with optimal distance between them, trilateration would be used with the RSSI values to pinpoint the user’s location as they walk through the buildings.
