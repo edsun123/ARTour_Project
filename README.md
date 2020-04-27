@@ -1,6 +1,4 @@
-# 20-25-Artour
-
-## Engineering Addendum
+# Engineering Addendum
 
 ## iOS Application Quick Start
 
