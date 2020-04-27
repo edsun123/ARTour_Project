@@ -35,3 +35,10 @@
 * We have not yet decided on specific batteries, so any that work to power the HUZZAH boards can be used
 * This project shows how to establish a connection to an iPhone and beacons using the UUID, major, minor, and RSSI values
 * This project was going to serve as a how to for us to establish a connection between our iOS application and beacons
+
+The steps (related to software) needed to be taken for project completion are: 
+1. Merging all three deliverables: AR application, beacons and fob.
+2. Use coordinate graph method, for which we need: establish a beacon of origin, plot the surrounding beacons in relation to it and use the strength from the RSSI readings to understand when a user is near and display the appropriate content.
+3. Build content and graphics for specific points of interest for the indoors experience and merge it with the App.
+4. Reach goals:  navigation between floors, navigating between other colleges, and incorporating video content to the AR experience.
+5. Optional: upload the modules to the online database in order to make the App dynamic and being able to change the content without actually changing the code of the App.
