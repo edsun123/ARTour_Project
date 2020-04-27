@@ -10,7 +10,7 @@
 
 **How To Run**
 1. Open `ARtour/ARtour.xcworkspace` in Xcode
-2. Connect the iPhone to the computer and run the application on the iPhone
+2. Connect the iPhone to the computer and run the application on the iPhone. The application requires the use of the phone's current location for GPS navigation
 
 **Current Status**
 * This version has the AR framework already built-in and the destination of Photonics is hard coded in
@@ -28,10 +28,17 @@
 
 **How To Run**
 1. Run the project `beacons/beacon_test_apps/RangingForBeacons/Beacon Sample/Beacon Sample.xcodeproj` on an iPhone following the same steps to run the iOS application
-2. Upload the file `beacon/` to the ESP 32 HUZZAH boards
+2. Upload the files `beacons/ibeacon/beacon/main/ibeacon_demo.c` to the ESP 32 HUZZAH boards
 3. Turn the beacons on by connecting the ESP 32 HUZZAH boards to the battery
 
 **Current Status**
 * We have not yet decided on specific batteries, so any that work to power the HUZZAH boards can be used
 * This project shows how to establish a connection to an iPhone and beacons using the UUID, major, minor, and RSSI values
 * This project was going to serve as a how to for us to establish a connection between our iOS application and beacons
+
+The steps (related to software) needed to be taken for project completion are: 
+1. Merging all three deliverables: AR application, beacons and fob.
+2. Use coordinate graph method, for which we need: establish a beacon of origin, plot the surrounding beacons in relation to it and use the strength from the RSSI readings to understand when a user is near and display the appropriate content.
+3. Build content and graphics for specific points of interest for the indoors experience and merge it with the App.
+4. Reach goals:  navigation between floors, navigating between other colleges, and incorporating video content to the AR experience.
+5. Optional: upload the modules to the online database in order to make the App dynamic and being able to change the content without actually changing the code of the App.
