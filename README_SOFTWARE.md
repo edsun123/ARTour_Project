@@ -10,8 +10,6 @@ The user will be given a one-time passkey along with a headset at the start of t
 
 This application is connected to Google Firebase and uses a Firestore database. For access to the project, please email snevarez@bu.edu.
 
-[Insert Photo of DB Layout]
-
 The database serves two purposes:
 1. All the tour groups are created in the database. When the application checks for a valid passkey, the user entry is checked against the groups in the database. When a valid key is found, a new document is created for the user in the group. When a user submits a question, it is saved in the database connected to the user's document. If the user also submits their email, it also gets saved in the user's document.
 2. All the tour information that appears in the AR experience is stored here. When the application is by a beacon, the application reads from the database the information related to its current location and displays that information for the user to see. This is also where the information would be updated if the need were to arise.
