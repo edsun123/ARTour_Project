@@ -40,6 +40,9 @@ The two devices work as a pair communicating wirelessly using the IR diode as th
 -if confirmed, the NFC sends a signal a confirmation to the fob through its IR diode and the confirmation is received by the fob’s IR LED 
 After establishing the basic communication, we were considering placing an LED on the fob meant to light up when the hub sends back confirmation to signal a successful interaction for the user. The ID authentication would not take place on the hardware, but in the software half of the design. (This part was not complete). The hub would also have its own ID to signify its location to the app (further development of the project would anticipate multiple destination points thus multiple hubs and different visual experiences).
 
+fob schematic
+![image](https://user-images.githubusercontent.com/24261732/80330716-e969c280-8813-11ea-9b19-69323735bb69.png)
+
 
 https://github.com/BostonUniversitySeniorDesign/20-25-Artour/blob/master/fob.png?raw=true
 This is what the fob would look like had the device been completed. This is a reference picture from a former project
