@@ -44,7 +44,7 @@ fob schematic
 ![image](https://user-images.githubusercontent.com/24261732/80330716-e969c280-8813-11ea-9b19-69323735bb69.png)
 
 
-https://github.com/BostonUniversitySeniorDesign/20-25-Artour/blob/master/fob.png?raw=true
+![image](https://user-images.githubusercontent.com/24261732/80330776-15854380-8814-11ea-95e7-cc844883e3cb.png)
 This is what the fob would look like had the device been completed. This is a reference picture from a former project
 
 # Resources
