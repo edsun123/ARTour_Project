@@ -52,7 +52,8 @@ fob schematic
 ![image](https://user-images.githubusercontent.com/24261732/80330716-e969c280-8813-11ea-9b19-69323735bb69.png)
 
 
-![image](https://user-images.githubusercontent.com/24261732/80330776-15854380-8814-11ea-95e7-cc844883e3cb.png)
+![image](https://user-images.githubusercontent.com/24261732/80332103-deb12c80-8817-11ea-9a55-9bfa004675c0.png)
+
 This is what the fob would look like had the device been completed. This is a reference picture from a former project
 
 # Resources
